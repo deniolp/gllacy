@@ -7,3 +7,5 @@
 *.sublime*
 node_modules/
 Thumbs.db
+gllacy.sublime-project
+gllacy.sublime-workspace
