@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Денис Попов](https://up.htmlacademy.ru/htmlcss/19/user/505149).
-* Наставник: `Павел Фомин` (https://htmlacademy.ru/profile/id44744).
+* Наставник: [Павел Фомин](https://htmlacademy.ru/profile/id44744).
 
 ---
 
