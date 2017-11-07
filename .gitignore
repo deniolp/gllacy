@@ -4,9 +4,6 @@
 *.log
 *.pdf
 *.psd
-*.jpg
-*.svg
-*.png
 *.sublime*
 node_modules/
 Thumbs.db
