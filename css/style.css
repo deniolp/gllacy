@@ -9,6 +9,11 @@ body {
 	background-color: #849d8f;
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .mom-of-slides {
 	height: 881px;
 	margin-left: 80px;
