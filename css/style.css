@@ -49,6 +49,7 @@ input:nth-of-type(3):checked ~ .slider > .slide3 {
 
 .mom-of-slides .controls {
 	top: 563px;
+	left: -53px;
 	position: absolute;
 }
 
@@ -57,7 +58,7 @@ input:nth-of-type(3):checked ~ .slider > .slide3 {
 	display: inline-block;
 	width: 21px;
 	height: 21px;
-	margin-right: 8px;
+	margin-right: 5px;
 	background-image: url("../img/radio-off.svg");
 	position: relative;
 	z-index: 100;
