@@ -46,42 +46,37 @@
         <h2 class="visually-hidden">Специальные двойные наборы мороженого</h2>
 
         <div class="mom-of-slides">
-          <div class="slide-1">
-            <img src="img/slide-1.png" class="icecream-background" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-            <h3 class="slide-description">Крем-брюле и пломбир с малиновым джемом</h3>
-          </div>
+            <input type="radio" name="radio-point" id="slide1" checked>
+            <input type="radio" name="radio-point" id="slide2">
+            <input type="radio" name="radio-point" id="slide3">
+            <div class="slider">
+                <div class="slides slide1">
+                  <img src="img/slide-1.png">
+                  <div class="slide-description">
+                    <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+                  </div>
+                </div>
 
-          <div class="slide-2">
-            <img src="img/slide-2.png" class="icecream-background" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
-            <h3 class="slide-description">Шоколадный пломбир и лимонный сорбет</h3>
-          </div>
+                <div class="slides slide2">
+                  <img src="img/slide-2.png">
+                  <div class="slide-description">
+                    <h3>Шоколадный пломбир и лимонный сорбет</h3>
+                  </div>
+                </div>
 
-          <div class="slide-3">
-            <img src="img/slide-3.png" class="icecream-background" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
-            <h3 class="slide-description">Пломбир с помадкой и клубничный щербет</h3>
-          </div>
+                <div class="slides slide3">
+                  <img src="img/slide-3.png">
+                  <div class="slide-description">
+                    <h3>Пломбир с помадкой и клубничный щербет</h3>
+                  </div>
+                </div>
+            </div>  
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
-
-        <ul class="pagination-list">
-          <li>
-            <label>
-              <input class="visually-hidden" type="radio" name="slider" value="slide-1" checked>
-              <span class="visually-hidden">Первый слайд</span>
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="visually-hidden" type="radio" name="slider" value="slide-2">
-              <span class="visually-hidden">Второй слайд</span>
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="visually-hidden" type="radio" name="slider" value="slide-3">
-              <span class="visually-hidden">Третий слайд</span>
-            </label>
-          </li>
-        </ul>
 
         <a href="#" class="reservation-both-button">Давайте оба!</a>
       </section>
