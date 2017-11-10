@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси</title>
+    <title>Магазин мороженого Глейси</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
@@ -17,7 +17,7 @@
             <a href="catalog.html">Каталог</a>
             <ul class="sub-menu">
               <li class="sub-menu-1"><a href="#">Новинки</a></li>
-              <li><a href="gllacy-catalog.html">Сливочное</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -29,9 +29,9 @@
       </nav>
         <section class="user-buttons">
           <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
-          <div class="header-button search-button"></div>
-          <div class="header-button login-button">Вход</div>
-          <div class="header-button basket-button">Пусто</div>
+          <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
+          <button class="header-button login-button" type="button">Вход</button>
+          <button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>Пусто</button>
         </section>
         <div class="header-schedule-phone">
           <p>С 10 до 20, ежедневно</p>
@@ -46,9 +46,9 @@
         <h2 class="visually-hidden">Специальные двойные наборы мороженого</h2>
 
         <div class="mom-of-slides">
-            <input type="radio" name="radio-point" id="slide1" checked>
-            <input type="radio" name="radio-point" id="slide2">
-            <input type="radio" name="radio-point" id="slide3">
+            <input type="radio" class="visually-hidden" name="radio-point" id="slide1" checked>
+            <input type="radio" class="visually-hidden" name="radio-point" id="slide2">
+            <input type="radio" class="visually-hidden" name="radio-point" id="slide3">
             <div class="slider">
                 <div class="slides slide1">
                   <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -72,9 +72,9 @@
                 </div>
             </div>  
             <div class="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
+                <label for="slide1"><span class="visually-hidden">Первый слайд с двумя мороженками</span></label>
+                <label for="slide2"><span class="visually-hidden">Второй слайд с двумя мороженками</span></label>
+                <label for="slide3"><span class="visually-hidden">Третий слайд с двумя мороженками</span></label>
             </div>
         </div>
 
