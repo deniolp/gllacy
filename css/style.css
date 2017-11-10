@@ -34,8 +34,6 @@ body {
 	width: 1079px;
 }
 
-
-
 .slider {
 	height: inherit;
 	overflow: hidden;
@@ -101,4 +99,24 @@ input:nth-of-type(3):checked ~ .controls label:nth-of-type(3) {
 .slide3 h3 {
 	width: 640px;
 }
+
+.bonuses-item {
+	width: 560px;
+	height: 229px;
+	border-radius: 15px;
+	color: #ffffff;
+}
+
+.bonuses-item-1 {
+	background-image: url("../img/raspberry-background.jpg");
+}
+
+.bonuses-item-2 {
+	background-image: url("../img/chocolate-background.jpg");
+}
+
+
+
+
+
 
