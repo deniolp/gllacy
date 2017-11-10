@@ -14,7 +14,7 @@ body {
 	margin: 0 auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -23,9 +23,6 @@ body {
   border: 0;
   padding: 0;
 
-  white-space: nowrap;
-
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -37,9 +34,7 @@ body {
 	width: 1079px;
 }
 
-.mom-of-slides > input {
-	display: none;
-}
+
 
 .slider {
 	height: inherit;
