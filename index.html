@@ -185,7 +185,12 @@
       <section>
         <h2 class="visually-hidden">Форма подписки на статьи по электронной почте</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="email" class="visually-hidden">Форма для ввода электронной почты для подписки</label>
+          <input type="email" name="email" id="email" placeholder="Электронная почта">
+          <label for="subsribe" class="visually-hidden">Кнопка отправки электронной почты для подписки</label>
+          <input type="submit" value="Отправить" id="subsribe" name="subsribe" class="button">
+        </form>
       </section>
 
       <section class="map">
