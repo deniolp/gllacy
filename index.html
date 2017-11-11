@@ -186,10 +186,14 @@
         <h2 class="visually-hidden">Форма подписки на статьи по электронной почте</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="email" class="visually-hidden">Форма для ввода электронной почты для подписки</label>
-          <input type="email" name="email" id="email" placeholder="Электронная почта">
-          <label for="subsribe" class="visually-hidden">Кнопка отправки электронной почты для подписки</label>
-          <input type="submit" value="Отправить" id="subsribe" name="subsribe" class="button">
+          <p>
+            <label for="email" class="visually-hidden">Форма для ввода электронной почты для подписки</label>
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label for="subsribe" class="visually-hidden">Кнопка отправки электронной почты для подписки</label>
+            <input type="submit" value="Отправить" id="subsribe" name="subsribe" class="button">
+          </p>
         </form>
       </section>
 
@@ -202,7 +206,7 @@
           <p>Для заказов по телефону:</p>
           <p><b>8 812 450-25-25</b></p>
           <p>(с 10 до 20 ежедневно)</p>
-          <!-- Здесь будет форма обратной связи -->
+          <button class="button feedback-button">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -241,8 +245,22 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback-slogan">Мы обязательно вам ответим!</p>
-      <span class="modal-close">X</span>
-      <!-- Здесь будет форма обратной связи -->
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input type="text" placeholder="Как вас зовут?" name="feedback-name" id="feedback-name-field">
+          <label for="feedback-name-field" class="visually-hidden">Поле для ввода имени</label>
+        </p>
+        <p>
+          <input type="email" placeholder="Ваша почта для ответа?" name="feedback-email" id="feedback-email-field">
+          <label for="feedback-email-field" class="visually-hidden">Поле для ввода электронной почты для ответа вам</label>
+        </p>
+        <p>
+          <textarea name="feedback-field" id="feedback-field" rows="5" placeholder="Напишите что-нибудь...">
+          </textarea>
+          <label for="feedback-field" class="visually-hidden">Поле для ввода сообщения</label>
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
     </section>
       <!-- Ниже попап с корзиной с выбранными товарами -->
     <section class="modal modal-basket">
