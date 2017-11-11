@@ -232,14 +232,32 @@
 
     <section class="modal modal-login">
         <h2 class="visually-hidden">Вход в личный кабинет</h2>
-        <!-- Форма входа -->
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
+          <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button" type="submit">Войти</button>
+        <p class="login-password-info">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </p>
+      </form>
+
     </section>
 
     <section class="modal modal-search">
       <h2 class="visually-hidden">Форма поиска</h2>
-      <!-- Здесь будет форма поиска -->
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+          <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
+        </p>
+      </form>
     </section>
 
     <section class="modal modal-feedback">
