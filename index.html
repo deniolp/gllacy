@@ -29,8 +29,35 @@
       </nav>
         <section class="user-buttons">
           <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
-          <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
-          <button class="header-button login-button" type="button">Вход</button>
+          <div>
+            <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
+            <h2 class="visually-hidden">Форма поиска</h2>
+            <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
+              <p>
+                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
+              </p>
+            </form>
+          </div>
+          <div>
+            <button class="header-button login-button" type="button"><span class="visually-hidden">Кнопка для вызова формы входа в личный кабинет</span>Вход</button>
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
+                <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-password-info">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </div>
           <button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>Пусто</button>
         </section>
         <div class="header-schedule-phone">
@@ -251,36 +278,6 @@
           <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
         </div>
     </footer>
-
-    <section class="modal modal-login">
-        <h2 class="visually-hidden">Вход в личный кабинет</h2>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
-          <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <p class="login-password-info">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </p>
-      </form>
-
-    </section>
-
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-          <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
-        </p>
-      </form>
-    </section>
 
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>

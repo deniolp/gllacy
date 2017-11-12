@@ -31,9 +31,59 @@
       </nav>
         <section class="user-buttons">
           <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
-          <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
-          <button class="header-button login-button" type="button">Вход</button>
-          <button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>Пусто</button>
+          <div>
+            <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
+            <h2 class="visually-hidden">Форма поиска</h2>
+            <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
+              <p>
+                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
+              </p>
+            </form>
+          </div>
+          <div>
+            <button class="header-button login-button" type="button"><span class="visually-hidden">Кнопка для вызова формы входа в личный кабинет</span>Вход</button>
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
+                <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-password-info">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </div>
+          <div>
+          	<button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>2 товара</button>
+						<div class="modal modal-basket">
+				      <h2 class="visually-hidden">Корзина с выбранным товаром</h2>
+				      <table>
+				        <tr>
+				          <td class="basket-img"><img src="img/basket-item.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+				          <td>Пломбир с апельсиновым джемом</td>
+				          <td>1,5 кг х 200 руб.</td>
+				          <td>300 руб.</td>
+				        </tr>
+				        <tr>
+				          <td class="basket-img"><img src="img/basket-item-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+				          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+				          <td>1,5 кг х 300 руб.</td>
+				          <td>450 руб.</td>
+				        </tr>
+				      </table>
+				        <p class="total-price">
+				          <span>Итого: </span><span>750 руб.</span>
+				        </p>
+				        <a href="#" class="button">Оформить заказ</a>
+    				</div>
+          </div>
         </section>
         <div class="header-schedule-phone">
         	<h2 class="visually-hidden">Время работы и контактный номер телефона</h2>
@@ -301,6 +351,7 @@
 				</ul>
 			</section>
 			<section class="catalog-pagination">
+				<h2 class="visually-hidden">Пагинация страниц в каталоге</h2>
 				<button class="pagination-button pagination-button-back" type="button"><span class="visually-hidden">Назад</span></button>
 	      <ul class="pagination-list">
 					<li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -333,59 +384,6 @@
           <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
         </div>
     	</footer>
-
-			<section class="modal modal-login">
-        <h2 class="visually-hidden">Вход в личный кабинет</h2>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        	<p>
-	          <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
-	          <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
-        	</p>
-        	<p>
-	          <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
-	          <input id="user-password" type="password" name="password" placeholder="Пароль">
-        	</p>
-        	<button class="button" type="submit">Войти</button>
-	        <p class="login-password-info">
-	          <a href="#">Забыли пароль?</a>
-	          <a href="#">Новая регистрация</a>
-	        </p>
-      	</form>
-    	</section>
-
-	    <section class="modal modal-search">
-	      <h2 class="visually-hidden">Форма поиска</h2>
-	      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-	        <p>
-	          <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-	          <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
-	        </p>
-	      </form>
-	    </section>
-
-      <!-- Ниже попап с корзиной с выбранными товарами -->
-
-	    <section class="modal modal-basket">
-	      <h2 class="visually-hidden">Корзина с выбранным товаром</h2>
-	      <table>
-	        <tr>
-	          <td class="basket-img"><img src="img/basket-item.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-	          <td>Пломбир с апельсиновым джемом</td>
-	          <td>1,5 кг х 200 руб.</td>
-	          <td>300 руб.</td>
-	        </tr>
-	        <tr>
-	          <td class="basket-img"><img src="img/basket-item-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-	          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-	          <td>1,5 кг х 300 руб.</td>
-	          <td>450 руб.</td>
-	        </tr>
-	      </table>
-	        <p class="total-price">
-	          <span>Итого: </span><span>750 руб.</span>
-	        </p>
-	        <a href="#" class="button">Оформить заказ</a>
-    	</section>
 
   </body>
 </html>
