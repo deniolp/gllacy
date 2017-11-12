@@ -116,7 +116,7 @@ input:nth-of-type(3):checked ~ .controls label:nth-of-type(3) {
 }
 
 .icecream-item {
-	border-radius: 135px;
+	border-radius: 50%;
 }
 
 
