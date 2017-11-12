@@ -112,9 +112,9 @@
 			    	</label>
 			  	</p>
 
-		    	<div class="filter-price">
-		    		<h3><span class="visually-hidden">Сортировка по цене:</span>Цена: 100 руб. – 500 руб.</h3>
-		    		<div class="filter-price-background">
+		    	<fieldset>
+ 		    		<legend>Цена: 100 руб. – 500 руб.</legend>
+ 		    		<div class="filter-price-background">
 			    		<div class="range-line">
 			    			<svg></svg>
 			    		</div>
@@ -125,7 +125,15 @@
 			    			<svg></svg>
 			    		</div>
 		    		</div>
-  				</div>
+ 		    		<label for="sorting-by-price-low">
+ 			    		<span class="visually-hidden">Сортировка по цене: нижний диапазон</span>
+ 			    	</label>
+     				<input  class="visually-hidden" type="range" name="sorting-by-price-low" id="sorting-by-price-low">
+     				<label for="sorting-by-price-high">
+ 			    		<span class="visually-hidden">Сортировка по цене: верхний диапазон</span>
+ 			    	</label>
+     				<input  class="visually-hidden" type="range" name="sorting-by-price-high" id="sorting-by-price-high">
+   				</fieldset>
 
     			<fieldset>
     				<legend class="legend">Жирность:</legend>

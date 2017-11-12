@@ -119,9 +119,9 @@ input:nth-of-type(3):checked ~ .controls label:nth-of-type(3) {
 	border-radius: 50%;
 }
 
-.filter-price {
-	width: 215px;
-	height: 65px;
+.filter-price-background {
+	width: 220px;
+	height: 38px;
 }
 
 
