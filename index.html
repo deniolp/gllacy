@@ -74,9 +74,9 @@
         <h2 class="visually-hidden">Специальные двойные наборы мороженого</h2>
 
         <div class="mom-of-slides">
-            <input type="radio" class="visually-hidden" name="radio-point" id="slide1" checked>
+            <!-- <input type="radio" class="visually-hidden" name="radio-point" id="slide1" checked>
             <input type="radio" class="visually-hidden" name="radio-point" id="slide2">
-            <input type="radio" class="visually-hidden" name="radio-point" id="slide3">
+            <input type="radio" class="visually-hidden" name="radio-point" id="slide3"> -->
             <div class="slider">
                 <div class="slides slide1">
                   <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -100,13 +100,29 @@
                 </div>
             </div>  
             <div class="controls">
-                <label for="slide1"><span class="visually-hidden">Выбирайте крем-брюле и пломбир с малиновым джемом</span></label>
+              <ul class="slides-switches">
+                <li class="slide-radio">
+                  <button class="slide-btn">
+                    Первый слайд<span class="visually-hidden"> Выбирайте крем-брюле и пломбир с малиновым джемом</span>
+                  </button>
+                </li>
+                <li class="slide-radio">
+                  <button class="slide-btn">
+                    Второй слайд<span class="visually-hidden"> Выбирайте шоколадный пломбир и лимонный сорбет</span>
+                  </button>
+                </li>
+                <li class="slide-radio">
+                  <button class="slide-btn">
+                    Третий слайд<span class="visually-hidden"> Выбирайте пломбир с помадкой и клубничный щербет</span>
+                  </button>
+                </li>
+              </ul>
+              <a href="#" class="reservation-both-button button"><span class="visually-hidden">Ссылка для заказа выбранного набора из двух мороженых </span>Давайте оба!</a>
+                <!-- <label for="slide1"><span class="visually-hidden">Выбирайте крем-брюле и пломбир с малиновым джемом</span></label>
                 <label for="slide2"><span class="visually-hidden">Выбирайте шоколадный пломбир и лимонный сорбет</span></label>
-                <label for="slide3"><span class="visually-hidden">Выбирайте пломбир с помадкой и клубничный щербет</span></label>
+                <label for="slide3"><span class="visually-hidden">Выбирайте пломбир с помадкой и клубничный щербет</span></label> -->
             </div>
         </div>
-
-        <a href="#" class="reservation-both-button button"><span class="visually-hidden">Ссылка для заказа выбранного набора из двух мороженых</span>Давайте оба!</a>
       </section>
 
       <section class="bonuses">
