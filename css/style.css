@@ -1,6 +1,522 @@
+html {
+	box-sizing: border-box;
+}
 
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
+body {
+	margin: 0;
+	padding: 0;
 
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-nav {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}
+
+.site-nav, .sub-menu {
+	list-style: none;
+}
+
+.main-nav a {
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.sub-menu {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.sub-menu a {
+	color: #323232;
+	text-decoration: none;
+}
+
+.sub-menu-1 a {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.sub-menu-1 {
+	border-bottom: 1px solid #323232;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+	background-color: #f7f6f3;
+	color: #333333;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+	background-color: #fbded7;
+	color: #323232;
+}
+
+.sub-menu a:active {
+	background-color: #f6b5a5;
+	color: #323232;
+}
+
+.modal {
+	background-color: #f8f7f4;
+}
+
+.user-buttons button {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #9db1a5;
+}
+
+.user-buttons input {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+}
+
+.login-password-info a {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #323232;
+	background-color: #f8f7f4;
+	text-decoration: underline;
+	text-decoration-color: rgba(50, 50, 50, 0.302);
+}
+
+.button {
+	background-color: #e74a35;
+	color: #fefefe;
+	border: none;
+}
+
+.button.login-link {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.header-schedule-phone p{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: right;
+}
+
+.header-schedule-phone p:last-child {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: right;
+}
+
+.slides h3 {
+	font-size: 60px;
+	line-height: 1;
+	color: #ffffff;
+	font-weight: 700;
+	text-align: center;
+}
+
+.slides a {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.slides-switches {
+	list-style: none;
+}
+
+.slide-btn {
+	border: none;
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+}
+
+.slide-btn:not(.slide-btn-active) {
+	border: none;
+	background-color: #849d8f;
+	background-image: url("../img/radio-off.svg");
+}
+
+.bonuses-item {
+	width: 560px;
+	height: 229px;
+	border-radius: 15px;
+}
+
+.bonuses-item h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.bonuses-item p {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.bonuses-item a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.bonuses-item {
+	background-image: url("../img/raspberry-background.jpg");
+}
+
+.bonuses-item:last-child {
+	background-image: url("../img/chocolate-background.jpg");
+}
+
+.hits ul, .catalog-container ul {
+	list-style: none;
+}
+
+.item-price {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.kg {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.catalog-item h3 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-color:  rgba(255, 255, 255, 0.2);
+}
+
+.features {
+	background-image: url("../img/waffle-background.jpg");
+	color: #323232;
+}
+
+.features h3 {
+	font-size: 24px;
+	list-style: 30px;
+	font-weight: 500;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features-list p {
+	font-size: 16px;
+	list-style: 22px;
+	font-weight: 400;
+}
+
+.news {
+	width: 560px;
+	height: 220px;
+	border-radius: 15px;
+	background-color: #ffffff;
+	background-image: url("../img/strawberry-background.png");
+	background-position: 204px -36px;
+	background-repeat: no-repeat;
+	color: #323232;
+}
+
+.news h2 {
+	font-size: 16px;
+	list-style: 22px;
+	font-weight: 500;
+}
+
+.news a {
+	font-size: 24px;
+	list-style: 30px;
+	font-weight: 700;
+	color: #323232;
+	text-decoration: underline;
+}
+
+.subscribe-section {
+	width: 560px;
+	height: 220px;
+	border-radius: 10px;
+	padding-top: 5px;
+	background-image: url("../img/postal-background.svg");
+}
+
+.subscribe-container {
+	margin: auto auto;
+	width: 548px;
+	height: 210px;
+	border-radius: 10px;
+	color: #5a5a5a;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	background-color: #f8f7f4;
+	overflow: hidden;
+}
+
+.subscribe-container input[type="email"] {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.subscribe-container .button, .map button {
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.map p:first-child {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.map p:nth-child(2) {
+	color: #323232;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.map p:nth-child(3) {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.map p:nth-child(4) {
+	color: #323232;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+.map p:nth-child(5) {
+	color: #323232;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.footer-features a {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-decoration: underline;
+	text-decoration-color:  rgba(255, 255, 255, 0.2);
+}
+
+.heart + a {
+	font-weight: 700;
+}
+
+.footer-copyright p {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.footer-copyright a {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-decoration: underline;
+	text-decoration-color:  rgba(255, 255, 255, 0.2);
+}
+
+.modal-feedback p {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.modal-feedback input, .modal-feedback textarea {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.modal-feedback button, .modal-basket .button {
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.main-footer ul {
+	list-style: none;
+}
+
+.modal-basket {
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+}
+.basket-price {
+	color: #999999;
+}
+
+.total-price span {
+	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.full-basket button {
+	color: #323232;
+	background-color: #f7f6f3;;
+}
+
+.container ul {
+	list-style: none;
+}
+
+.breadcrumbs a, .breadcrumbs li {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.breadcrumbs a {
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+h1.page-title {
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.catalog-filter label, .catalog-filter legend {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.sorting option, .filter-option label {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+button.filter-button {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	background-color: #a6b7ae;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.pagination-list a {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.pagination-item-current {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.pagination-item-current a {
+	color: #323232;
+}
+	
 
 
 /** {

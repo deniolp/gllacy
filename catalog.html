@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Глейси. Каталог мороженого</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	
@@ -18,7 +18,7 @@
         <h2 class="visually-hidden">Главная навигация по сайту Глэйси</h2>
         <ul class="site-nav">
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a class="page-current">Каталог</a>
             <ul class="sub-menu">
               <li class="sub-menu-1"><a href="#">Новинки</a></li>
               <li><a href="gllacy-catalog.html">Сливочное</a></li>
@@ -62,7 +62,7 @@
               </p>
             </form>
           </div>
-          <div>
+          <div class="full-basket">
           	<button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>2 товара</button>
 						<div class="modal modal-basket">
 				      <h2 class="visually-hidden">Корзина с выбранным товаром</h2>
@@ -70,18 +70,18 @@
 				        <tr>
 				          <td class="basket-img"><img src="img/basket-item.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
 				          <td>Пломбир с апельсиновым джемом</td>
-				          <td>1,5 кг х 200 руб.</td>
+				          <td>1,5 кг х <span class="basket-price">200 руб.</span></td>
 				          <td>300 руб.</td>
 				        </tr>
 				        <tr>
 				          <td class="basket-img"><img src="img/basket-item-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 				          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-				          <td>1,5 кг х 300 руб.</td>
+				          <td>1,5 кг х <span class="basket-price">300 руб.</span></td>
 				          <td>450 руб.</td>
 				        </tr>
 				      </table>
 				        <p class="total-price">
-				          <span>Итого: </span><span>750 руб.</span>
+				          <span>Итого: 750 руб.</span>
 				        </p>
 				        <a href="#" class="button">Оформить заказ</a>
     				</div>
@@ -96,8 +96,8 @@
 
     <main class="container">
     	<ul class="breadcrumbs">
-  			<li><a href="index.html">Главная</a></li>
-  			<li><a href="catalog.html">Каталог</a></li>
+  			<li><a href="index.html">Главная</a><span> »</span></li>
+  			<li><a href="catalog.html">Каталог</a><span> »</span></li>
   			<li class="breadcrumbs-current">Сливочное</li>
   		</ul>
   		<h1 class="page-title">Сливочное мороженое</h1>
@@ -193,7 +193,7 @@
 
 				<section class="catalog-container">
 					<ul>
-						<li class="hits-item">
+						<li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="icecream-item">
@@ -207,7 +207,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" class="icecream-item">
@@ -221,7 +221,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="icecream-item">
@@ -235,7 +235,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой" class="icecream-item">
@@ -249,7 +249,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом" class="icecream-item">
@@ -263,7 +263,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники" class="icecream-item">
@@ -277,7 +277,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой" class="icecream-item">
@@ -291,7 +291,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой" class="icecream-item">
@@ -305,7 +305,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада" class="icecream-item">
@@ -319,7 +319,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом" class="icecream-item">
@@ -333,7 +333,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада" class="icecream-item">
@@ -347,7 +347,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом" class="icecream-item">

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Магазин мороженого Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -108,17 +108,17 @@
               <ul class="slides-switches">
                 <li class="slide-radio">
                   <button class="slide-btn slide-btn-active">
-                    Первый слайд<span class="visually-hidden"> Выбирайте крем-брюле и пломбир с малиновым джемом</span>
+                    <span class="visually-hidden">Первый слайд - Выбирайте крем-брюле и пломбир с малиновым джемом</span>
                   </button>
                 </li>
                 <li class="slide-radio">
                   <button class="slide-btn">
-                    Второй слайд<span class="visually-hidden"> Выбирайте шоколадный пломбир и лимонный сорбет</span>
+                    <span class="visually-hidden">Второй слайд - Выбирайте шоколадный пломбир и лимонный сорбет</span>
                   </button>
                 </li>
                 <li class="slide-radio">
                   <button class="slide-btn">
-                    Третий слайд<span class="visually-hidden"> Выбирайте пломбир с помадкой и клубничный щербет</span>
+                    <span class="visually-hidden">Третий слайд - Выбирайте пломбир с помадкой и клубничный щербет</span>
                   </button>
                 </li>
               </ul>
@@ -132,12 +132,12 @@
       <section class="bonuses">
         <h2 class="visually-hidden">Бонусы при покупке мороженого!</h2>
 
-          <section class="bonuses-item bonuses-item-1">
+          <section class="bonuses-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a href="#" class="button">Хочу варенье!</a>
           </section>
-          <section class="bonuses-item bonuses-item-2">
+          <section class="bonuses-item">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a href="#" class="button">Хочу шоколадки!</a>
@@ -148,7 +148,7 @@
       <section class="hits">
         <h2 class="visually-hidden">Список самого покупаемого мороженого</h2>
         <ul>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="icecream-item">
@@ -165,7 +165,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" class="icecream-item">
@@ -182,7 +182,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="icecream-item">
@@ -199,7 +199,7 @@
                 <span class="visually-hidden">Кнопка для быстрого просмотра этого мороженого</span>Быстрый просмотр
             </button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <a href="catalog-item.html">
               <p class="item-image">
                 <img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой" class="icecream-item">
@@ -251,7 +251,8 @@
         <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </article>
 
-      <section>
+      <section class="subscribe-section">
+        <div class="subscribe-container">
         <h2 class="visually-hidden">Форма подписки на статьи по электронной почте</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -264,6 +265,7 @@
             <input type="submit" value="Отправить" id="subsribe" name="subsribe" class="button">
           </p>
         </form>
+        </div>
       </section>
 
       <section class="map">
@@ -316,7 +318,8 @@
           </textarea>
           <label for="feedback-field" class="visually-hidden">Поле для ввода сообщения</label>
         </p>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="button" type "submit">Отправить</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </section>
     
