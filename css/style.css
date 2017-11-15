@@ -323,6 +323,10 @@ a.page-current:active  {
 	list-style: none;
 }
 
+img.icecream-item {
+	border-radius: 50%;
+}
+
 .item-price {
 	font-size: 45px;
 	font-weight: 700;
