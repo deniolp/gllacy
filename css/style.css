@@ -222,6 +222,26 @@ a.page-current:active  {
 	text-align: right;
 }
 
+/*.slider {
+	position: relative;
+}
+
+.slides {
+	position: absolute;
+	top: -651px;
+	left: 70px;
+}
+
+.slides:not(.slide1) {
+	opacity: 0;
+	z-index: 0;
+}
+
+.slide-btn:nth-child(2):active ~ .slides.slide2 {
+	opacity: 1;
+	z-index: 1;
+}*/
+
 .slides h3 {
 	font-size: 60px;
 	line-height: 1;
