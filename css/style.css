@@ -193,6 +193,13 @@ a.page-current:active  {
 	vertical-align: middle;
 }
 
+.header-button:hover,
+.header-button:focus {
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
+
 .button.login-link {
 	font-size: 18px;
 	font-weight: 700;
@@ -504,7 +511,7 @@ a.page-current:active  {
 
 .full-basket button {
 	color: #323232;
-	background-color: #f7f6f3;;
+	background-color: #f7f6f3;
 }
 
 .container ul {
@@ -569,7 +576,9 @@ button.filter-button {
 	line-height: 18px;
 	font-weight: 500;
 	background-color: #a6b7ae;
-	border: none;
+	border-style: solid;
+  	border-width: 2px;
+  	border-color: rgb(255, 255, 255);
 }
 
 button.filter-button:hover,
