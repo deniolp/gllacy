@@ -21,7 +21,7 @@
             <a class="page-current">Каталог</a>
             <ul class="sub-menu">
               <li class="sub-menu-1"><a href="#">Новинки</a></li>
-              <li><a href="gllacy-catalog.html">Сливочное</a></li>
+              <li><a class="sub-menu-current">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -106,12 +106,15 @@
     		<h2 class="visually-hidden">Форма с фильтром выбора мороженого</h2>
     		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
     			<p>
-    				<label>
+    				<label for="sorting">
 			      	Сортировка:
-			      <select name="sorting">
-			      	<option>По популярности</option>
+			      </label>
+			      <select name="sorting" id="sorting" class="select">
+			      	<option>по популярности</option>
+			      	<option>сначала недорогие</option>
+			      	<option>сначала дорогие</option>
+			      	<option>по жирности</option>
 			      </select>
-			    	</label>
 			  	</p>
 
 		    	<fieldset>
@@ -183,7 +186,7 @@
 							</li>
 						</ul>
     			</fieldset>
-					<button type="submit" class="filter-button button">Применить</button>
+					<button type="submit" class="filter-button ">Применить</button>
     		</form>
 
     	</section>

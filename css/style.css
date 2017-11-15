@@ -64,6 +64,7 @@ a {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
+	background-color: #f8f7f4;
 }
 
 .sub-menu a {
@@ -89,12 +90,24 @@ a {
 .sub-menu a:hover,
 .sub-menu a:focus {
 	background-color: #fbded7;
-	color: #323232;
+	color: #e84d37;
 }
 
 .sub-menu a:active {
 	background-color: #f6b5a5;
-	color: #323232;
+	color: #e84d37;
+}
+
+a.sub-menu-current,
+a.sub-menu-current:hover,
+a.sub-menu-current:focus,
+a.sub-menu-current:active,
+a.page-current,
+a.page-current:hover,
+a.page-current:focus,
+a.page-current:active  {
+	background-color: #d07058;
+	color: #ffffff;
 }
 
 .modal {
@@ -116,6 +129,35 @@ a {
 	color: #999999;
 }
 
+.subscribe-container input[type="email"],
+.modal-feedback input,
+.modal-feedback textarea {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.user-buttons input:hover,
+.subscribe-container input[type="email"]:hover,
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+	border-style: solid;
+    border-width: 2px;
+    border-color: rgb(154, 154, 154);
+}
+
+.user-buttons input:focus,
+.subscribe-container input[type="email"]:focus,
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+	border-style: solid;
+  	border-width: 2px;
+  	border-color: rgb(46, 136, 228);
+  	color: #323232;
+}
+
+
 .login-password-info a {
 	font-size: 13px;
 	line-height: 24px;
@@ -126,10 +168,29 @@ a {
 	text-decoration-color: rgba(50, 50, 50, 0.302);
 }
 
+.login-password-info a:hover,
+.login-password-info a:focus,
+.login-password-info a:active {
+	color: #e84d37;
+	text-decoration-color: rgba(232, 77, 55, 0.302);
+}
+
 .button {
 	background-color: #e74a35;
 	color: #fefefe;
 	border: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.button:hover {
+	background-color: #f17c64;
+}
+
+.header-button {
+	border: none;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .button.login-link {
@@ -185,6 +246,15 @@ a {
 	border: none;
 	background-color: #849d8f;
 	background-image: url("../img/radio-off.svg");
+}
+
+.slide-btn:not(.slide-btn-active):hover,
+.slide-btn:not(.slide-btn-active):focus {
+	background-color: #b2c1b7;
+}
+
+.slide-btn:not(.slide-btn-active):active {
+	background-color: #ffffff;
 }
 
 .bonuses-item {
@@ -247,6 +317,14 @@ a {
 	color: #ffffff;
 	text-decoration: underline;
 	text-decoration-color:  rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.catalog-item h3:hover,
+.catalog-item h3:focus,
+.catalog-item h3:active {
+	color: #ffbc9e;
+	text-decoration-color:  rgba(255, 188, 158, 0.3);
 }
 
 .features {
@@ -316,13 +394,6 @@ a {
 	overflow: hidden;
 }
 
-.subscribe-container input[type="email"] {
-	color: #999999;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
-}
-
 .subscribe-container .button, .map button {
 	color: #fefefe;
 	font-size: 18px;
@@ -365,13 +436,24 @@ a {
 	font-weight: 400;
 }
 
-.footer-features a {
+.footer-features a,
+.footer-copyright a {
 	color: #ffffff;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 	text-decoration: underline;
 	text-decoration-color:  rgba(255, 255, 255, 0.2);
+}
+
+.footer-features a:hover,
+.footer-features a:focus,
+.footer-features a:active,
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+	color: #ffbc9e;
+	text-decoration-color:  rgba(255, 188, 158, 0.3);
 }
 
 .heart + a {
@@ -385,27 +467,11 @@ a {
 	font-weight: 400;
 }
 
-.footer-copyright a {
-	color: #ffffff;
-	font-size: 13px;
-	line-height: 18px;
-	font-weight: 400;
-	text-decoration: underline;
-	text-decoration-color:  rgba(255, 255, 255, 0.2);
-}
-
 .modal-feedback p {
 	color: #323232;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
-}
-
-.modal-feedback input, .modal-feedback textarea {
-	color: #999999;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
 }
 
 .modal-feedback button, .modal-basket .button {
@@ -457,6 +523,13 @@ a {
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+	color: #ffbc9e;
+	text-decoration-color:  rgba(255, 188, 158, 0.3);
+}
+
 h1.page-title {
 	color: #ffffff;
 	font-size: 35px;
@@ -471,7 +544,19 @@ h1.page-title {
 	font-weight: 500;
 }
 
-.sorting option, .filter-option label {
+.filter-price-background {
+	width: 218px;
+	height: 36px;
+}
+
+.runner-left svg:hover,
+.runner-left svg:focus,
+.runner-right svg:hover,
+.runner-right svg:focus {
+	cursor: pointer;
+}
+
+.filter option, .filter-option label {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -484,6 +569,37 @@ button.filter-button {
 	line-height: 18px;
 	font-weight: 500;
 	background-color: #a6b7ae;
+	border: none;
+}
+
+button.filter-button:hover,
+button.filter-button:focus {
+	background-color: #fbfcfb;
+	color: #323232;
+}
+
+.catalog-filter fieldset {
+	border: none;
+}
+
+.catalog-filter select, .filter-price-background, fieldset ul {
+	background-color: #a6b7ae;
+}
+
+.catalog-filter select {
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.catalog-filter select:hover,
+.catalog-filter select:focus {
+	color: #323232;
 }
 
 .pagination-list {
@@ -505,6 +621,19 @@ button.filter-button {
 	font-weight: 500;
 }
 
+.pagination-item:not(.pagination-item-current):hover,
+.pagination-item:not(.pagination-item-current):focus {
+	background-color: #9db1a5;
+}
+
+.pagination-item:not(.pagination-item-current):active {
+	background-color: #ffffff;
+}
+
+.pagination-item:not(.pagination-item-current):active a {
+	color: #323232;
+}
+
 .pagination-item-current {
 	width: 25px;
 	height: 25px;
@@ -516,6 +645,8 @@ button.filter-button {
 .pagination-item-current a {
 	color: #323232;
 }
+
+
 	
 
 
