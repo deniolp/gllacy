@@ -365,7 +365,7 @@ img.icecream-item {
 
 .features h3 {
 	font-size: 24px;
-	list-style: 30px;
+	line-height: 30px;
 	font-weight: 500;
 }
 
@@ -375,7 +375,7 @@ img.icecream-item {
 
 .features-list p {
 	font-size: 16px;
-	list-style: 22px;
+	line-height: 22px;
 	font-weight: 400;
 }
 
@@ -392,13 +392,13 @@ img.icecream-item {
 
 .news h2 {
 	font-size: 16px;
-	list-style: 22px;
+	line-height: 22px;
 	font-weight: 500;
 }
 
 .news a {
 	font-size: 24px;
-	list-style: 30px;
+	line-height: 30px;
 	font-weight: 700;
 	color: #323232;
 	text-decoration: underline;
@@ -413,7 +413,7 @@ img.icecream-item {
 }
 
 .subscribe-container {
-	margin: auto auto;
+	margin: 0 auto;
 	width: 548px;
 	height: 210px;
 	border-radius: 10px;
@@ -432,39 +432,25 @@ img.icecream-item {
 	font-weight: 700;
 }
 
-.map p:first-child {
+.map p {
 	color: #323232;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
 }
 
-.map p:nth-child(2) {
-	color: #323232;
+.map b {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 }
 
-.map p:nth-child(3) {
-	color: #323232;
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: 400;
+.map-phone {
+	line-height: 22px;
 }
 
-.map p:nth-child(4) {
-	color: #323232;
-	font-size: 18px;
+.map-schedule {
 	line-height: 22px;
-	font-weight: 700;
-}
-
-.map p:nth-child(5) {
-	color: #323232;
-	font-size: 14px;
-	line-height: 22px;
-	font-weight: 400;
 }
 
 .footer-features a,
