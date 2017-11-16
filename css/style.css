@@ -404,6 +404,13 @@ img.icecream-item {
 	text-decoration: underline;
 }
 
+.news a:hover,
+.news a:focus,
+.news a:active {
+	color: #e84d37;
+	text-decoration-color: rgba(232, 77, 55, 0.302);
+}
+
 .subscribe-section {
 	width: 560px;
 	height: 220px;
