@@ -41,6 +41,10 @@ a {
 	margin: 0 auto;
 }
 
+header > img {
+	margin-top: 9px;
+}
+
 .main-nav {
 	font-size: 16px;
 	line-height: 18px;
@@ -260,14 +264,26 @@ a.page-current:active  {
 }
 
 .slides {
-	position: absolute;
-	top: -350px;
-	left: 34px;
-}
-
-.slides {
 	opacity: 0;
 	z-index: 0;
+}
+
+.slide1 {
+	position: absolute;
+	top: -359px;
+	left: 51px;
+}
+
+.slide2 {
+	position: absolute;
+	top: -359px;
+	left: 31px;
+}
+
+.slide3 {
+	position: absolute;
+	top: -359px;
+	left: 33px;
 }
 
 .slide-active {
@@ -291,6 +307,22 @@ a.page-current:active  {
 	margin-right: auto;
 }
 
+.slide2 .slide-description {
+	width: 644px;
+	height: 127px;
+	margin-top: -532px;
+	margin-left: 217px;
+	margin-right: auto;
+}
+
+.slide1 .slide-description {
+	width: 670px;
+	height: 127px;
+	margin-top: -554px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .slides a {
 	font-size: 32px;
 	line-height: 44px;
@@ -300,6 +332,7 @@ a.page-current:active  {
 
 .slides-switches {
 	position: relative;
+	top: 224px;
 	display: flex;
 	width: 78px;
 	height: 20px;
@@ -333,9 +366,20 @@ a.page-current:active  {
 	background-color: #ffffff;
 }
 
+.reservation-both-button {
+	display: block;
+	border-radius: 40px;
+	padding-top: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 23px;
+	width: 278px;
+	height: 63px;
+}
+
 .bonuses {
 	position: relative;
-	margin-top: 297px;
+	margin-top: 288px;
 	opacity: 1;
 	z-index: 5;
 }
