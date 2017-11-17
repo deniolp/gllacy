@@ -122,6 +122,21 @@ a.page-current:active  {
 	background-color: #9db1a5;
 }
 
+.search-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-image: url("../img/search-logo.svg");
+	background-repeat: no-repeat;
+	background-size: 17px 17px;
+	background-position: center;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-image: url("../img/search-logo-b.svg");
+}
+
 .user-buttons input {
 	font-size: 14px;
 	line-height: 24px;
