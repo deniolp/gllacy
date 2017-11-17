@@ -367,6 +367,7 @@ a.page-current:active  {
 }
 
 .reservation-both-button {
+	position: relative;
 	display: block;
 	border-radius: 40px;
 	padding-top: 8px;
