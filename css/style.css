@@ -37,7 +37,7 @@ a {
 }
 
 .container {
-	width: 1200px;
+	width: 1150px;
 	margin: 0 auto;
 }
 
@@ -437,6 +437,29 @@ img.icecream-item {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
+}
+
+.map {
+	width: 100vw;
+  	position: relative;
+  	left: 50%;
+  	right: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+}
+
+.map-background {
+	margin: 0 auto;
+	width: 1200px;
+	height: 430px;
+	background-color: #f7f1d9;
+	background-image: url("../img/map-pin.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.map-info {
+	background-color: #fbfbfb;
 }
 
 .map p {
