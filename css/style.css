@@ -341,6 +341,12 @@ img.icecream-item {
 	color: #ffffff;
 }
 
+.hit-background {
+	width: 61px;
+	height: 61px;
+	background-image: url("../img/hit-logo.svg");
+}
+
 .catalog-item h3 {
 	font-size: 16px;
 	font-weight: 500;
