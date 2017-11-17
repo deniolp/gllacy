@@ -137,6 +137,14 @@ a.page-current:active  {
 	background-image: url("../img/search-logo-b.svg");
 }
 
+.search-form,
+.login-form,
+.sub-menu,
+.modal-feedback,
+.modal-basket {
+	display: none;
+}
+
 .user-buttons input {
 	font-size: 14px;
 	line-height: 24px;
