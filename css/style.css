@@ -55,9 +55,11 @@ a {
 }
 
 .main-nav a {
+	position: relative;
 	color: #ffffff;
 	text-decoration: underline;
 	text-decoration-color: rgba(255, 255, 255, 0.2);
+	z-index: 5;
 }
 
 .sub-menu {
@@ -68,13 +70,17 @@ a {
 }
 
 .sub-menu a {
+	position: relative;
 	color: #323232;
 	text-decoration: none;
+	z-index: 5;
 }
 
 .sub-menu-1 a {
+	position: relative;
 	font-weight: 700;
 	text-decoration: none;
+	z-index: 5;
 }
 
 .sub-menu-1 {
@@ -115,11 +121,13 @@ a.page-current:active  {
 }
 
 .user-buttons button {
+	position: relative;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
 	color: #ffffff;
 	background-color: #9db1a5;
+	z-index: 5;
 }
 
 .search-button {
@@ -146,10 +154,12 @@ a.page-current:active  {
 }
 
 .user-buttons input {
+	position: relative;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #999999;
+	z-index: 5;
 }
 
 .subscribe-container input[type="email"],
@@ -245,25 +255,25 @@ a.page-current:active  {
 	text-align: right;
 }
 
-/*.slider {
+.slider {
 	position: relative;
 }
 
 .slides {
 	position: absolute;
-	top: -651px;
-	left: 70px;
+	top: -350px;
+	left: 34px;
 }
 
-.slides:not(.slide1) {
+.slides {
 	opacity: 0;
 	z-index: 0;
 }
 
-.slide-btn:nth-child(2):active ~ .slides.slide2 {
+.slide-active {
 	opacity: 1;
 	z-index: 1;
-}*/
+}
 
 .slides h3 {
 	font-size: 60px;
@@ -271,6 +281,14 @@ a.page-current:active  {
 	color: #ffffff;
 	font-weight: 700;
 	text-align: center;
+}
+
+.slide3 .slide-description {
+	width: 632px;
+	height: 127px;
+	margin-top: -527px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .slides a {
@@ -281,6 +299,7 @@ a.page-current:active  {
 }
 
 .slides-switches {
+	position: relative;
 	display: flex;
 	width: 78px;
 	height: 20px;
@@ -288,6 +307,7 @@ a.page-current:active  {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	z-index: 5;
 }
 
 .slide-btn {
@@ -311,6 +331,13 @@ a.page-current:active  {
 
 .slide-btn:not(.slide-btn-active):active {
 	background-color: #ffffff;
+}
+
+.bonuses {
+	position: relative;
+	margin-top: 297px;
+	opacity: 1;
+	z-index: 5;
 }
 
 .bonuses-item {
@@ -342,10 +369,12 @@ a.page-current:active  {
 
 .bonuses-item {
 	background-image: url("../img/raspberry-background.jpg");
+	background-position: center;
 }
 
 .bonuses-item:last-child {
 	background-image: url("../img/chocolate-background.jpg");
+	background-position: center;
 }
 
 .hits ul, .catalog-container ul {
