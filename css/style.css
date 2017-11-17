@@ -554,7 +554,8 @@ img.icecream-item {
 	background-color: #f7f6f3;
 }
 
-.container ul {
+.breadcrumbs,
+fieldset ul {
 	list-style: none;
 }
 
