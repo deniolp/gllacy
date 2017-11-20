@@ -10,58 +10,59 @@
   <body class="body-3">
 
     <header class="page-header container">
-      <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси" class="logo-image">
-
-      <nav class="main-nav">
-        <h2 class="visually-hidden">Главная навигация по сайту Глэйси</h2>
-        <ul class="site-nav">
-          <li>
-            <a href="catalog.html">Каталог</a>
-            <ul class="sub-menu">
-              <li class="sub-menu-1"><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="pay-delivery.html">Доставка и оплата</a></li>
-          <li><a href="about-us.html">О компании</a></li>
-        </ul>
-      </nav>
-        <section class="user-buttons">
-          <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
-          <div>
-            <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
-              <p>
-                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-                <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
-              </p>
-            </form>
-          </div>
-          <div>
-            <button class="header-button login-button" type="button"><span class="visually-hidden">Кнопка для вызова формы входа в личный кабинет</span>Вход</button>
-            <h2 class="visually-hidden">Вход в личный кабинет</h2>
-            <form class="login-form modal modal-login" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
-                <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
-              </p>
-              <p>
-                <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
-              </p>
-              <a class="login-link button" href="login.html">Войти</a>
-              <p class="login-password-info">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
-            </form>
-          </div>
-          <button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>Пусто</button>
-        </section>
+      <div class="header-wrapper">
+        <p class="logo-image"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси"></p>
+        <nav class="main-nav">
+          <h2 class="visually-hidden">Главная навигация по сайту Глэйси</h2>
+          <ul class="site-nav">
+            <li>
+              <a href="catalog.html">Каталог</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-1"><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="pay-delivery.html">Доставка и оплата</a></li>
+            <li><a href="about-us.html">О компании</a></li>
+          </ul>
+        </nav>
+          <section class="user-buttons">
+            <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
+            <div>
+              <button class="header-button search-button" type="button"><span class="visually-hidden">Кнопка для вызова формы поиска</span></button>
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
+                <p>
+                  <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                  <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
+                </p>
+              </form>
+            </div>
+            <div>
+              <button class="header-button login-button" type="button"><span class="visually-hidden">Кнопка для вызова формы входа в личный кабинет</span>Вход</button>
+              <h2 class="visually-hidden">Вход в личный кабинет</h2>
+              <form class="login-form modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="user-login">Поле для ввода вашей элетронной почты</label>
+                  <input id="user-login" type="email" name="user-login-field" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password">Поле для ввода пароля</label>
+                  <input id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <a class="login-link button" href="login.html">Войти</a>
+                <p class="login-password-info">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </div>
+            <button class="header-button basket-button" type="button"><span class="visually-hidden">Состояние корзины </span>Пусто</button>
+          </section>
+        </div>
         <div class="header-schedule-phone">
           <h2 class="visually-hidden">Время работы и контактный номер телефона</h2>
           <p>С 10 до 20, ежедневно</p>
@@ -132,7 +133,7 @@
       <section class="bonuses">
         <h2 class="visually-hidden">Бонусы при покупке мороженого!</h2>
 
-          <section class="bonuses-item">
+          <section class="bonuses-item bonuses-item-1">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a href="#" class="button">Хочу варенье!</a>
@@ -315,8 +316,7 @@
           <label for="feedback-email-field" class="visually-hidden">Поле для ввода электронной почты для ответа вам</label>
         </p>
         <p>
-          <textarea name="feedback-field" id="feedback-field" rows="5" placeholder="Напишите что-нибудь...">
-          </textarea>
+          <textarea name="feedback-field" id="feedback-field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
           <label for="feedback-field" class="visually-hidden">Поле для ввода сообщения</label>
         </p>
         <button class="button" type="submit">Отправить</button>

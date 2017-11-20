@@ -61,12 +61,19 @@ a {
 }
 
 .container {
-	width: 1150px;
+	width: 1148px;
 	margin: 0 auto;
 }
 
+.header-wrapper {
+	display: flex;
+}
+
 .logo-image {
+	margin: 0;
+	padding: 0;
 	margin-top: 9px;
+	margin-right: 10px;
 }
 
 .main-nav {
@@ -76,8 +83,32 @@ a {
 	color: #ffffff;
 }
 
+.site-nav {
+	display: flex;
+	margin: 0;
+	margin-right: auto;
+	margin-top: 23px;
+	padding: 0;
+}
+
+.user-buttons {
+	display: flex;
+	margin-left: auto;
+	margin-top: 23px;
+}
+
+.header-button {
+	height: 32px;
+	border-radius: 15px;
+}
+
 .site-nav, .sub-menu {
 	list-style: none;
+}
+
+.header-schedule-phone p {
+	margin: 0;
+	padding: 0;
 }
 
 .main-nav a {
@@ -278,7 +309,7 @@ a.page-current:active  {
 .slides {
 	display: none;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: 194px;
 	width: 100%;
 }
 
@@ -369,7 +400,7 @@ a.page-current:active  {
 
 .slides-switches {
 	position: relative;
-	top: 224px;
+	top: 444px;
 	display: flex;
 	width: 78px;
 	height: 20px;
@@ -418,14 +449,19 @@ a.page-current:active  {
 }
 
 .bonuses {
-	margin-top: 288px;
-	opacity: 1;
+	display: flex;
+	margin-top: 508px;
+	margin-bottom: 40px;
 }
 
 .bonuses-item {
 	width: 560px;
 	height: 229px;
 	border-radius: 15px;
+}
+
+.bonuses-item-1 {
+	margin-right: 25px;
 }
 
 .bonuses-item h3 {
@@ -461,6 +497,20 @@ a.page-current:active  {
 
 .hits ul, .catalog-container ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hits > ul,
+.catalog-container > ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 267px;
+	min-height: 327px;
 }
 
 img.icecream-item {
