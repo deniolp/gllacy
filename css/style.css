@@ -209,6 +209,11 @@ a.page-current:active  {
 	color: #999999;
 }
 
+.modal-feedback textarea {
+	border-width: 2px;
+	border-color: transparent;
+}
+
 .subscribe-container input[type="email"],
 .modal-feedback input,
 .modal-feedback textarea {
@@ -220,20 +225,17 @@ a.page-current:active  {
 
 .user-buttons input:hover,
 .subscribe-container input[type="email"]:hover,
-.modal-feedback input:hover {
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
 	border-style: solid;
     border-width: 2px;
     border-color: rgb(154, 154, 154);
 }
 
-.modal-feedback textarea:hover,
-.modal-feedback textarea:focus {
-    border-width: 1px;
-}
-
 .user-buttons input:focus,
 .subscribe-container input[type="email"]:focus,
-.modal-feedback input:focus {
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
 	border-style: solid;
   	border-width: 2px;
   	border-color: rgb(46, 136, 228);
