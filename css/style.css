@@ -1050,7 +1050,9 @@ button.filter-button:focus {
 }
 
 .catalog-filter select:hover,
-.catalog-filter select:focus {
+.catalog-filter select:focus,
+.filter-option label:hover,
+.filter-option label:focus {
 	color: #323232;
 }
 
