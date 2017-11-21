@@ -509,6 +509,7 @@ a.page-current:active  {
 .catalog-container > ul {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .catalog-item {
@@ -588,7 +589,7 @@ img.icecream-item {
 }
 
 .catalog-quick-button {
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	bottom: -55px;
 	width: 200px;
@@ -596,6 +597,10 @@ img.icecream-item {
 	border-radius: 15px;
 	margin-left: 33px;
 	z-index: 1;
+}
+
+.catalog-item a:hover + .catalog-quick-button {
+	display: block;
 }
 
 .features {
