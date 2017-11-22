@@ -582,13 +582,6 @@ img.icecream-item {
 	text-align: center;
 }
 
-/*.catalog-item h3:hover,
-.catalog-item h3:focus,
-.catalog-item h3:active {
-	color: #ffbc9e;
-	text-decoration-color:  rgba(255, 188, 158, 0.3);
-}*/
-
 .catalog-item-over {
 	display: none;
 	position: absolute;
@@ -609,7 +602,7 @@ img.icecream-item {
 	height: 44px;
 	border-radius: 15px;
 	margin-left: 33px;
-	padding-top: 10px;
+	padding-top: 12px;
 	z-index: 2;
 }
 
