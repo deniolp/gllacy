@@ -616,9 +616,12 @@ img.icecream-item {
 }
 
 .features {
+	position: relative;
 	background-image: url("../img/waffle-background.jpg");
 	color: #323232;
+	border-radius: 20px;
 	margin-bottom: 40px;
+	z-index: 5;
 }
 
 .features h3 {
