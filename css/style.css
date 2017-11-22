@@ -522,6 +522,11 @@ a.page-current:active  {
 	padding: 0;
 	z-index: 0;
 }
+
+.hits li {
+	margin-bottom: 15px;
+}
+
 .catalog-item:nth-child(4n) {
 	margin-right: 0;
 }
@@ -619,18 +624,20 @@ img.icecream-item {
 }
 
 .features {
-	position: relative;
+	height: 306px;
 	background-image: url("../img/waffle-background.jpg");
 	color: #323232;
-	border-radius: 20px;
+	border-radius: 15px;
 	margin-bottom: 40px;
-	z-index: 5;
 }
 
-.features h3 {
+.features h2 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
+	border-top: 1px solid rgba(255, 255, 255, 0);
+	margin-left: 20px;
+	padding-top: 24px;
 }
 
 .features-list {
@@ -639,16 +646,25 @@ img.icecream-item {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	padding-top: 1px;
 }
 
 .feature-item {
-	width: 484px;
+	width: 540px;
 }
 
 .features-list p {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
+	margin: 0;
+	margin-left: 59px;
+	margin-bottom: 22px;
+	padding: 0;
+}
+
+.features-list li:last-child p {
+	margin-left: 52px;
 }
 
 .news-subscribe-wrapper {
