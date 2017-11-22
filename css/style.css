@@ -520,6 +520,7 @@ a.page-current:active  {
 	margin-right: 26px;
 	margin-bottom: 40px;
 	padding: 0;
+	z-index: 0;
 }
 .catalog-item:nth-child(4n) {
 	margin-right: 0;
@@ -581,11 +582,23 @@ img.icecream-item {
 	text-align: center;
 }
 
-.catalog-item h3:hover,
+/*.catalog-item h3:hover,
 .catalog-item h3:focus,
 .catalog-item h3:active {
 	color: #ffbc9e;
 	text-decoration-color:  rgba(255, 188, 158, 0.3);
+}*/
+
+.catalog-item-over {
+	display: none;
+	position: absolute;
+	top: -6px;
+	left: -13px;
+	z-index: -1;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	width: 293px;
+	height: 405px;
 }
 
 .catalog-quick-button {
@@ -596,11 +609,17 @@ img.icecream-item {
 	height: 44px;
 	border-radius: 15px;
 	margin-left: 33px;
-	z-index: 1;
+	padding-top: 10px;
+	z-index: 2;
 }
 
-.catalog-item a:hover + .catalog-quick-button {
+.catalog-item:hover .catalog-item-over,
+.catalog-item:hover .catalog-quick-button {
 	display: block;
+}
+
+.catalog-item:hover {
+	z-index: 1;
 }
 
 .features {
