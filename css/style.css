@@ -583,19 +583,18 @@ img.icecream-item {
 }
 
 .catalog-item-over {
-	display: none;
 	position: absolute;
 	top: -6px;
 	left: -13px;
-	z-index: -1;
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 5px;
 	width: 293px;
 	height: 405px;
+	opacity: 0;
+	z-index: -1;
 }
 
 .catalog-quick-button {
-	display: none;
 	position: absolute;
 	bottom: -55px;
 	width: 200px;
@@ -603,15 +602,19 @@ img.icecream-item {
 	border-radius: 15px;
 	margin-left: 33px;
 	padding-top: 12px;
+	opacity: 0;
 	z-index: 2;
 }
 
 .catalog-item:hover .catalog-item-over,
-.catalog-item:hover .catalog-quick-button {
-	display: block;
+.catalog-item:focus .catalog-item-over,
+.catalog-item:hover .catalog-quick-button,
+.catalog-item:focus .catalog-quick-button {
+	opacity: 1;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
 	z-index: 1;
 }
 
