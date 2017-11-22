@@ -624,25 +624,25 @@ img.icecream-item {
 }
 
 .features {
-	height: 306px;
+	min-height: 306px;
 	background-image: url("../img/waffle-background.jpg");
 	color: #323232;
 	border-radius: 15px;
+	margin-top: 20px;
 	margin-bottom: 40px;
+	padding: 25px 20px 10px;
 }
 
 .features h2 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
-	border-top: 1px solid rgba(255, 255, 255, 0);
-	margin-left: 20px;
-	padding-top: 24px;
+	margin: 0;
 }
 
 .features-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -657,10 +657,8 @@ img.icecream-item {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
-	margin: 0;
-	margin-left: 59px;
-	margin-bottom: 22px;
-	padding: 0;
+	margin-left: 56px;
+	padding-top: 4px;
 }
 
 .features-list li:last-child p {
