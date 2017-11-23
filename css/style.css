@@ -798,7 +798,7 @@ img.icecream-item {
 	width: 36px;
 	height: 36px;
 	border-radius: 50%;
-	border-width: 5px;
+	border-width: 2px;
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.5);
 	margin-right: 14px;
@@ -839,7 +839,7 @@ img.icecream-item {
 }
 
 .footer-social li a:active {
-	opacity: 1;
+	opacity: 0.9;
 	border-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1147,34 +1147,7 @@ button.filter-button:focus {
 	
 
 
-/** {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Roboto;
-}
-
-body {
-	background-color: #849d8f;
-}
-
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+/*
 
 .mom-of-slides {
 	height: 881px;
@@ -1249,29 +1222,6 @@ input:nth-of-type(3):checked ~ .controls label:nth-of-type(3) {
 	width: 640px;
 }
 
-.bonuses-item {
-	width: 560px;
-	height: 229px;
-	border-radius: 15px;
-	color: #ffffff;
-}
-
-.bonuses-item-1 {
-	background-image: url("../img/raspberry-background.jpg");
-}
-
-.bonuses-item-2 {
-	background-image: url("../img/chocolate-background.jpg");
-}
-
-.icecream-item {
-	border-radius: 50%;
-}
-
-.filter-price-background {
-	width: 220px;
-	height: 38px;
-}
 */
 
 
