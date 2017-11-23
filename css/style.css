@@ -466,6 +466,7 @@ a.page-current:active  {
 	height: 229px;
 	border-radius: 15px;
 	margin-bottom: 40px;
+	padding: 16px 18px 10px;
 }
 
 .bonuses-item h3 {
@@ -473,6 +474,8 @@ a.page-current:active  {
 	line-height: 41px;
 	font-weight: 700;
 	color: #ffffff;
+	margin: 0;
+	padding: 0;
 }
 
 .bonuses-item p {
@@ -480,13 +483,29 @@ a.page-current:active  {
 	line-height: 22px;
 	font-weight: 700;
 	color: #ffffff;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 44px;
+	padding: 0;
 }
 
 .bonuses-item a {
+	display: block;
+	width: 165px;
+	height: 46px;
+	border-radius: 20px;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
+	padding-top: 10px;
+	margin-left: 356px;
+}
+
+.bonuses .bonuses-item:last-child a {
+	width: 189px;
+	height: 45px;
+	margin-left: 332px;
 }
 
 .bonuses-item {
