@@ -86,14 +86,29 @@ a {
 
 .site-nav {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	margin-right: auto;
 	margin-top: 23px;
 	padding: 0;
 }
 
+.site-nav li {
+	margin-right: 2px;
+}
+
+.site-nav a {
+	display: inline-block;
+	height: 32px;
+	padding-top: 7px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 15px;
+}
+
 .user-buttons {
 	display: flex;
+	flex-wrap: wrap;
 	margin-left: auto;
 	margin-top: 23px;
 }
@@ -277,7 +292,76 @@ a.page-current:active  {
 .header-button {
 	border: none;
 	text-align: center;
-	vertical-align: middle;
+	margin-left: 11px;
+}
+
+.login-button {
+	position: relative;
+	width: 92px;
+	height: 32px;
+	padding-left: 34px;
+}
+
+.login-button::before {
+	content: "";
+	position: absolute;
+	left: 16px;
+	top: 6px;
+	width: 21px;
+	height: 20px;
+	background-image: url("../img/enter-logo.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.login-button:hover::before {
+	background-image: url("../img/enter-logo-b.svg");
+}
+
+.basket-button {
+	position: relative;
+	width: 117px;
+	height: 32px;
+	padding-right: 1px;
+}
+
+.basket-button::before {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 6px;
+	width: 21px;
+	height: 20px;
+	background-image: url("../img/basket.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.basket-button:hover::before {
+	background-image: url("../img/basket-b.svg");
+}
+
+.full-button {
+	position: relative;
+	width: 117px;
+	height: 32px;
+	padding-left: 26px;
+}
+
+.full-button::before {
+	content: "";
+	position: absolute;
+	left: 14px;
+	top: 6px;
+	width: 21px;
+	height: 20px;
+	background-image: url("../img/full-basket.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.full-button:hover::before {
+	background-image: url("../img/full-basket.svg");
 }
 
 .header-button:hover,
