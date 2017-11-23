@@ -800,7 +800,7 @@ img.icecream-item {
   	right: 50%;
   	margin-left: -50vw;
   	margin-right: -50vw;
-  	margin-bottom: 5px;
+  	margin-bottom: 4px;
 }
 
 .map-background {
@@ -963,6 +963,10 @@ img.icecream-item {
 	text-decoration-color:  rgba(255, 255, 255, 0.2);
 }
 
+.footer-copyright a {
+	font-size: 12px;
+}
+
 .footer-features a:hover,
 .footer-features a:focus,
 .footer-features a:active,
@@ -979,7 +983,7 @@ img.icecream-item {
 
 .footer-copyright p {
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 }
