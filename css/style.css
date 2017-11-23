@@ -566,15 +566,17 @@ img.icecream-item {
 	font-weight: 700;
 	line-height: 45px;
 	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .ruble {
 	display: inline-block;
 	width: 31px;
-	height: 33px;
+	height: 31px;
 	margin-left: 3px;
-	background-image: url("../img/ruble-logo.svg");
+	background-image: url("../img/ruble-logo.png");
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .kg {
