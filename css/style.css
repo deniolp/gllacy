@@ -614,6 +614,8 @@ img.icecream-item {
 	border-radius: 5px;
 	width: 293px;
 	height: 405px;
+	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.3s;
 	opacity: 0;
 	z-index: -1;
 }
