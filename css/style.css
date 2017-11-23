@@ -377,15 +377,31 @@ a.page-current:active  {
 	line-height: 24px;
 }
 
+.header-schedule-phone {
+	position: relative;
+}
+
 .header-schedule-phone p{
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
 	color: #ffffff;
 	text-align: right;
+	margin: 0;
+	margin-top: 0px;
+	padding: 0;
 }
 
-.header-schedule-phone p:last-child {
+.header-schedule-phone p:first-of-type {
+	position: absolute;
+	left: 995px;
+	top: -7px;
+}
+
+.header-schedule-phone p:last-of-type {
+	position: absolute;
+	left: 980px;
+	top: 14px;
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 700;
@@ -400,7 +416,7 @@ a.page-current:active  {
 .slides {
 	display: none;
 	position: absolute;
-	margin-top: 194px;
+	margin-top: 234px;
 	width: 100%;
 }
 
@@ -491,7 +507,7 @@ a.page-current:active  {
 
 .slides-switches {
 	position: relative;
-	top: 444px;
+	top: 484px;
 	display: flex;
 	width: 78px;
 	height: 20px;
@@ -544,7 +560,7 @@ a.page-current:active  {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-top: 508px;
+	margin-top: 548px;
 }
 
 .bonuses-item {
@@ -763,11 +779,60 @@ img.icecream-item {
 }
 
 .features-list p {
+	position: relative;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	margin-left: 56px;
 	padding-top: 4px;
+}
+
+.features-list li:first-child p:first-of-type::before {
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -9px;
+	background-image: url("../img/icecream-little.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-list li:first-child p:last-of-type::before {
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -7px;
+	background-image: url("../img/leaf.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-list li:last-child p:first-of-type::before {
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -9px;
+	background-image: url("../img/cow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-list li:last-child p:last-of-type::before {
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -7px;
+	background-image: url("../img/termometer.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .features-list li:last-child p {
