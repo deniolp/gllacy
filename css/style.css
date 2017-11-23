@@ -701,12 +701,22 @@ img.icecream-item {
 	background-position: 204px -36px;
 	background-repeat: no-repeat;
 	color: #323232;
+	padding: 24px 20px;
 }
 
 .news h2 {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.news h3 {
+	width: 290px;
+	margin: 0;
+	margin-top: 3px;
+	padding: 0;
 }
 
 .news a {
@@ -734,6 +744,7 @@ img.icecream-item {
 
 .subscribe-container {
 	margin: 0 auto;
+	padding: 29px 19px;
 	width: 548px;
 	height: 210px;
 	border-radius: 10px;
@@ -743,6 +754,32 @@ img.icecream-item {
 	font-weight: 400;
 	background-color: #f8f7f4;
 	overflow: hidden;
+}
+
+.subscribe-container p {
+	margin: 0;
+	padding: 0;
+}
+
+.subscribe-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscribe-form p {
+	margin-top: 36px;
+}
+
+.subscribe-form p:first-child input {
+	width: 368px;
+	height: 44px;
+	padding-left: 10px;
+}
+
+.subscribe-form p:last-child input {
+	width: 128px;
+	height: 43px;
+	border-radius: 20px;
 }
 
 .subscribe-container .button, .map button {
