@@ -48,7 +48,9 @@ a {
 	text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden,
+input[type="radio"],
+input[type="checkbox"] {
   position: absolute;
 
   width: 1px;
@@ -1097,6 +1099,20 @@ img.icecream-item {
 
 .footer-features li:first-child a {
 	margin-right: 30px;
+	font-weight: 700;
+	position: relative;
+}
+
+.footer-features li:first-child a::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -22px;
+	width: 15px;
+	height: 13px;
+	background-image: url("../img/heart.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .footer-features li:nth-child(3) a {
@@ -1127,15 +1143,27 @@ img.icecream-item {
 	text-decoration-color:  rgba(255, 188, 158, 0.3);
 }
 
-.heart + a {
-	font-weight: 700;
-}
-
 .footer-copyright p {
+	position: relative;
 	color: #ffffff;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+}
+
+.footer-copyright p::before {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: 0px;
+	width: 120px;
+	height: 39px;
+	background-image: url("../img/logo-htmlacademy-small.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .modal-feedback p {
@@ -1185,9 +1213,24 @@ fieldset ul {
 	display: flex;
 	justify-content: space-between;
 	width: 219px;
+	margin-top: 19px;
+	margin-bottom: 5px;
 }
 
-.breadcrumbs a, .breadcrumbs li {
+.breadcrumbs li:first-child,
+.breadcrumbs li:nth-child(2) {
+	position: relative;
+}
+
+.breadcrumbs li:first-child::after,
+.breadcrumbs li:nth-child(2)::after {
+	content: "»";
+	position: absolute;
+	right: -15px;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 16px;
@@ -1211,6 +1254,9 @@ h1.page-title {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+	margin: 0;
+	margin-bottom: 27px;
+	padding: 0;
 }
 
 .filter-wrapper-1,
@@ -1221,12 +1267,20 @@ h1.page-title {
 }
 
 .filter-wrapper-1 {
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 
 fieldset {
 	margin: 0;
 	padding: 0;
+}
+
+.filter fieldset:first-child label {
+	padding-left: 11px;
+}
+
+.select {
+	padding-left: 15px;
 }
 
 legend {
@@ -1264,10 +1318,93 @@ legend {
 	border-radius: 15px;
 }
 
+.filter-price legend,
+.staff-filter legend {
+	padding-left: 8px;
+}
+
+.fat-filter legend {
+	padding-left: 6px;
+}
+
+.fat-filter li {
+	position: relative;
+	padding-top: 7px;
+}
+
+.fat-filter li:first-child {
+	margin-left: 40px;
+}
+
+.fat-filter li:last-child {
+	margin-right: 20px;
+}
+
+.fat-filter li label::before {
+	content: "";
+	position: absolute;
+	left: -30px;
+	width: 22px;
+	height: 22px;
+	border: 5px solid #eef2f0;
+	border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+	content: "";
+	position: absolute;
+	left: -22px;
+	top: 15px;
+	width: 6px;
+	height: 6px;
+	border: 3px solid #eef2f0;
+	border-radius: 50%;
+}
+
 .staff-filter ul {
 	width: 702px;
 	height: 36px;
 	border-radius: 15px;
+}
+
+.staff-filter li {
+	position: relative;
+	padding-top: 8px;
+}
+
+.staff-filter li:first-child {
+	margin-left: 36px;
+}
+
+.staff-filter li:last-child {
+	margin-right: 18px;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
+	content: "";
+	position: absolute;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #eef2f0;
+	border-radius: 2px;
+}
+
+.filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+	left: -22px;
+	top: 7px;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.filter-input-checkbox:checked + label:hover::after,
+.filter-input-checkbox:checked + label:focus::after {
+	background-image: url("../img/checkbox-on-b.svg");
 }
 
 .filter-price-background {
@@ -1283,7 +1420,8 @@ legend {
 	cursor: pointer;
 }
 
-.filter option, .filter-option label {
+.filter option,
+.filter-option label {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -1328,6 +1466,9 @@ button.filter-button:focus {
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-image: url("../img/arrow-down.svg");
+	background-position: 168px 14px;
+	background-repeat: no-repeat;
 }
 
 .catalog-filter select:hover,
@@ -1335,6 +1476,18 @@ button.filter-button:focus {
 .filter-option label:hover,
 .filter-option label:focus {
 	color: #323232;
+}
+
+.filter-option label:hover::before,
+.filter-option label:focus::before,
+.filter-option label:hover::after,
+.filter-option label:focus::after {
+	border-color: #323232;
+}
+
+.catalog-filter select:hover,
+.catalog-filter select:focus {
+	background-image: url("../img/arrow-down-b.svg");
 }
 
 .catalog-container {
