@@ -339,7 +339,8 @@ button.filter-button:active {
 	background-position: center;
 }
 
-.login-button:hover::before {
+.login-button:hover::before,
+.login-button:focus::before {
 	background-image: url("../img/enter-logo-b.svg");
 }
 
@@ -362,7 +363,8 @@ button.filter-button:active {
 	background-position: center;
 }
 
-.basket-button:hover::before {
+.basket-button:hover::before,
+.basket-button:focus::before {
 	background-image: url("../img/basket-b.svg");
 }
 
@@ -385,7 +387,8 @@ button.filter-button:active {
 	background-position: center;
 }
 
-.full-button:hover::before {
+.full-button:hover::before,
+.full-button:focus::before {
 	background-image: url("../img/full-basket.svg");
 }
 
@@ -914,7 +917,7 @@ img.icecream-item {
 
 .subscribe-section {
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	border-radius: 10px;
 	padding-top: 5px;
 	background-image: url("../img/postal-background.svg");
@@ -924,7 +927,7 @@ img.icecream-item {
 	margin: 0 auto;
 	padding: 29px 19px;
 	width: 548px;
-	height: 210px;
+	min-height: 210px;
 	border-radius: 10px;
 	color: #5a5a5a;
 	font-size: 16px;
@@ -1551,15 +1554,17 @@ button.filter-button:focus {
 	height: 25px;
 	border-radius: 50%;
 	text-align: center;
-	padding-top: 3px;
 	margin-right: 4px;
 }
 
 .pagination-list a {
+	display: inline-block;
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+	vertical-align: middle;
+	margin-top: 3px;
 }
 
 .pagination-list li:first-child,
