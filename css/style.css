@@ -1440,16 +1440,55 @@ legend {
 }
 
 .filter-price-background {
+	position: relative;
 	width: 218px;
 	height: 36px;
 	border-radius: 15px;
+	padding-top: 16px;
 }
 
-.runner-left svg:hover,
-.runner-left svg:focus,
-.runner-right svg:hover,
-.runner-right svg:focus {
-	cursor: pointer;
+.range-line {
+	width: 176px;
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 0 auto;
+}
+
+.range-line-selected {
+	position: absolute;
+	top: 16px;
+	left: 33px;
+	right: 67px;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	margin: 0 auto;
+}
+
+.runner-left,
+.runner-right {
+	position: absolute;
+	top: 8px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+}
+
+.runner-left {
+	left: 33px;
+}
+
+.runner-right {
+	right: 67px;
+}
+
+.runner-left:hover,
+.runner-left:focus,
+.runner-right:hover,
+.runner-right:focus {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .filter option,
@@ -1486,7 +1525,7 @@ button.filter-button:focus {
 }
 
 .catalog-filter select, .filter-price-background, fieldset ul {
-	background-color: #a6b7ae;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .catalog-filter select {
