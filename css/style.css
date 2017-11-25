@@ -638,10 +638,9 @@ button.filter-button:active {
 
 .bonuses-item {
 	width: 560px;
-	height: 229px;
 	border-radius: 15px;
 	margin-bottom: 40px;
-	padding: 16px 18px 10px;
+	padding: 16px 22px 23px 18px;
 }
 
 .bonuses-item h3 {
@@ -674,13 +673,13 @@ button.filter-button:active {
 	font-weight: 700;
 	color: #ffffff;
 	padding-top: 10px;
-	margin-left: 356px;
+	margin-left: auto;
 }
 
 .bonuses .bonuses-item:last-child a {
 	width: 189px;
 	height: 45px;
-	margin-left: 332px;
+	margin-left: auto;
 }
 
 .bonuses-item {
