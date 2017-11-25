@@ -103,12 +103,21 @@ img {
 	padding: 0;
 }
 
-.site-nav li {
+.site-nav > li {
 	margin-right: 2px;
+}
+
+.site-nav li:first-child {
+	position: relative;
+}
+
+.site-nav li:first-child:hover .sub-menu {
+	display: block;
 }
 
 .site-nav a {
 	display: inline-block;
+	vertical-align: middle;
 	height: 32px;
 	padding-top: 7px;
 	padding-left: 13px;
@@ -123,7 +132,8 @@ img {
 	margin-top: 23px;
 }
 
-.site-nav, .sub-menu {
+.site-nav,
+.sub-menu {
 	list-style: none;
 }
 
@@ -139,15 +149,33 @@ img {
 }
 
 .sub-menu {
+	position: absolute;
+	top: 37px;
+	left: -7px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
+	white-space: nowrap;
 	background-color: #f8f7f4;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 7px;
+	border-radius: 5px;
 }
 
 .sub-menu a {
+	width: 100%;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
 	color: #323232;
 	text-decoration: none;
+	margin: 0;
+	padding-top: 11px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 9px;
+	border-radius: 0;
 }
 
 .sub-menu-1 a {
@@ -155,12 +183,24 @@ img {
 	text-decoration: none;
 }
 
-.sub-menu-1 {
-	border-bottom: 1px solid #323232;
+.sub-menu li:nth-of-type(2) {
+  margin-top: 4px;
 }
 
-.main-nav a:hover,
-.main-nav a:focus {
+.sub-menu-1::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 6px;
+
+  width: 128px;
+  height: 1px;
+
+  background-color: #d1d0ce;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
 	background-color: #f7f6f3;
 	color: #333333;
 }
@@ -168,12 +208,11 @@ img {
 .sub-menu a:hover,
 .sub-menu a:focus {
 	background-color: #fbded7;
-	color: #e84d37;
+	color: #323232;
 }
 
-.sub-menu a:active {
-	background-color: #f6b5a5;
-	color: #e84d37;
+.sub-menu li:first-child a {
+	border-radius: 5px 5px 0 0;
 }
 
 a.sub-menu-current,
@@ -219,8 +258,8 @@ a.page-current {
 
 .search-form,
 .login-form,
-.sub-menu,
 .modal-feedback,
+.sub-menu,
 .modal-basket {
 	display: none;
 }
@@ -310,6 +349,12 @@ a.page-current {
 button.filter-button:active {
 	background-color: #ededed;
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
+}
+
+.sub-menu a:active {
+	background-color: #f6b5a5;
+	color: #323232;
+	box-shadow: none;
 }
 
 .header-button {
