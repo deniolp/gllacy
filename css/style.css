@@ -259,6 +259,7 @@ a.page-current {
 .search-form {
 	position: absolute;
 	left: -298px;
+	top: 37px;
 	width: 341px;
 	height: 84px;
 	padding: 20px 15px;
