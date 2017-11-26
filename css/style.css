@@ -266,6 +266,12 @@ a.page-current {
 	background-color: #f8f7f4;
 }
 
+.search-form,
+.login-form,
+.sub-menu {
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
 .search-form p,
 .login-form p {
 	margin: 0;
