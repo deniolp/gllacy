@@ -1730,10 +1730,9 @@ button.filter-button:focus {
 	display: inline-block;
 	color: #ffffff;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 25px;
 	font-weight: 500;
 	vertical-align: middle;
-	margin-top: 3px;
 }
 
 .pagination-list li:first-child,
