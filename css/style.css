@@ -161,6 +161,7 @@ img {
 	padding: 0;
 	padding-bottom: 7px;
 	border-radius: 5px;
+	z-index: 10;
 }
 
 .sub-menu a {
@@ -233,6 +234,10 @@ a.page-current {
 	background-color: #f8f7f4;
 }
 
+.user-buttons {
+	position: relative;
+}
+
 .user-buttons button {
 	font-size: 14px;
 	line-height: 16px;
@@ -251,9 +256,81 @@ a.page-current {
 	background-position: center;
 }
 
+.search-form {
+	position: absolute;
+	left: -298px;
+	width: 341px;
+	height: 84px;
+	padding: 20px 15px;
+	border-radius: 6px;
+	background-color: #f8f7f4;
+}
+
+.search-form p,
+.login-form p {
+	margin: 0;
+	padding: 0;
+}
+
+.search-form input {
+	width: 311px;
+	height: 44px;
+}
+
 .search-button:hover,
 .search-button:focus {
 	background-image: url("../img/search-logo-b.svg");
+}
+
+.search-button:hover ~ .search-form,
+.search-button:focus ~ .search-form {
+	display: block;
+}
+
+.login-button:hover ~ .login-form,
+.login-button:focus ~ .login-form {
+	display: block;
+}
+
+.login-form {
+	position: absolute;
+	left: -130px;
+	top: 37px;
+	width: 277px;
+	height :214px;
+	padding: 20px;
+	border-radius: 6px;
+	z-index: 10;
+}
+
+.login-form input {
+	width: 241px;
+	height: 44px;
+}
+
+.login-form p:first-child,
+.login-form p:nth-child(2) {
+	margin-bottom: 20px;
+}
+
+.login-links-wrapper {
+	display: flex;
+}
+
+.button.login-link {
+	display: block;
+	width: 100px;
+	height: 44px;
+	border-radius: 15px;
+	padding-top: 10px;
+	margin-right: 19px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.login-password-info {
+	width: 120px;
 }
 
 .search-form,
@@ -266,23 +343,28 @@ a.page-current {
 
 .user-buttons input {
 	font-size: 14px;
-	line-height: 24px;
-	font-weight: 400;
-	color: #999999;
-}
-
-.modal-feedback textarea {
-	border-width: 2px;
-	border-color: transparent;
 }
 
 .subscribe-container input[type="email"],
 .modal-feedback input,
 .modal-feedback textarea {
-	color: #999999;
 	font-size: 16px;
+	
+}
+
+.user-buttons input,
+.subscribe-container input[type="email"],
+.modal-feedback input,
+.modal-feedback textarea {
+	color: #999999;
 	line-height: 24px;
 	font-weight: 400;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 13px;
+	padding-right: 15px;
+	border: 1px solid #d3d3d2;
+	border-radius: 6px;
 }
 
 .user-buttons input:hover,
@@ -292,6 +374,9 @@ a.page-current {
 	border-style: solid;
     border-width: 2px;
     border-color: rgb(154, 154, 154);
+	padding-left: 12px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 .user-buttons input:focus,
@@ -302,10 +387,14 @@ a.page-current {
   	border-width: 2px;
   	border-color: rgb(46, 136, 228);
   	color: #323232;
+	padding-left: 12px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 
 .login-password-info a {
+	display: block;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -313,6 +402,10 @@ a.page-current {
 	background-color: #f8f7f4;
 	text-decoration: underline;
 	text-decoration-color: rgba(50, 50, 50, 0.302);
+}
+
+.login-password-info a:first-child {
+	margin-bottom: -5px;
 }
 
 .login-password-info a:hover,
@@ -441,13 +534,6 @@ button.filter-button:active {
 .header-button:focus {
 	color: #323232;
 	background-color: #f7f6f3;
-}
-
-
-.button.login-link {
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 24px;
 }
 
 .header-schedule-phone {
