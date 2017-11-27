@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	position: relative;
 }
 
 *, *:before, *:after {
@@ -274,7 +275,8 @@ a.page-current {
 }
 
 .search-form p,
-.login-form p {
+.login-form p,
+.modal-feedback p {
 	margin: 0;
 	padding: 0;
 }
@@ -338,6 +340,52 @@ a.page-current {
 
 .login-password-info {
 	width: 120px;
+}
+
+.modal-feedback {
+	position: absolute;
+	top: 576px;
+	left: 623px;
+	margin-top: -238px;
+	margin-left: -221px;
+	width: 477px;
+	height: 442px;
+	padding: 16px 23px;
+	border-radius: 10px;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.feedback-form input {
+	width: 267px;
+	height: 44px;
+	margin-bottom: 20px;
+}
+
+.feedback-form textarea {
+	margin-bottom: 20px;
+}
+
+.feedback-form .button {
+	align-self: flex-end;
+	width: 138px;
+	height: 43px;
+	border-radius: 20px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 18px;
+	height: 17px;
+	border: none;
+	background-color: green;
 }
 
 .search-form,
