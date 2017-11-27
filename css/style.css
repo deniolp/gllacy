@@ -1030,6 +1030,7 @@ img.icecream-item {
 
 .ruble {
 	display: inline-block;
+	vertical-align: baseline;
 	width: 31px;
 	height: 31px;
 	margin-left: 3px;
@@ -1406,31 +1407,35 @@ img.icecream-item {
 	margin-right: 14px;
 }
 
-.footer-social li:first-child a {
+.tw-link {
 	background-image: url("../img/twitter-logo.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: inherit;
 	opacity: 0.8;
 }
 
-.footer-social li:nth-child(2) a {
+.insta-link {
 	background-image: url("../img/insta-logo.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: inherit;
 	opacity: 0.8;
 }
 
-.footer-social li:nth-child(3) a {
+.fb-link {
 	background-image: url("../img/fb-logo.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: inherit;
 	opacity: 0.8;
 }
 
-.footer-social li:last-child a {
+.vk-link {
 	background-image: url("../img/vk-logo.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: inherit;
 	opacity: 0.8;
 }
 
