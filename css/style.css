@@ -270,7 +270,8 @@ a.page-current {
 
 .search-form,
 .login-form,
-.sub-menu {
+.sub-menu,
+.modal-basket {
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -378,15 +379,158 @@ a.page-current {
 	border-radius: 20px;
 }
 
+.modal-feedback p {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
 .modal-close {
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 14px;
+	right: 13px;
 	width: 18px;
 	height: 17px;
 	border: none;
-	background-color: green;
+	background-color: transparent;
 }
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	right: 2px;
+	width: 20px;
+	height: 2px;
+	background-color: #353535;
+}
+
+.modal-basket {
+	position: absolute;
+	top: 37px;
+	right: 0;
+	width: 540px;
+	border-radius: 6px;
+	padding: 18px 15px 20px;
+	z-index: 10;
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.modal-feedback button,
+.modal-basket .button {
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.basket-price {
+	color: #999999;
+}
+
+.full-basket button {
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
+.modal-basket table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.modal-basket td {
+	padding-top: 10px;
+	padding-bottom: 7px;
+	vertical-align: top;
+}
+
+.modal-basket td.total-price {
+	text-align: right;
+	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	padding-top: 17px;
+	border-top: 1px solid #cacac7;
+}
+
+.remove-item {
+	position: relative;
+	width: 15px;
+}
+
+.remove-item button {
+	width: 15px;
+	height: 15px;
+	border: none;
+	background-color: transparent;
+}
+
+.remove-item button::before,
+.remove-item button::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: -1px;
+	width: 15px;
+	height: 2px;
+	background-color: #353535;
+}
+
+.remove-item button::before,
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.remove-item button::after,
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.basket-img {
+	width: 55px;
+	padding-left: 10px;
+}
+
+.basket-img img {
+	position: relative;
+	top: -9px;
+}
+
+.table-basket-item {
+	width: 220px;
+}
+
+.table-basket-kg {
+	width: 150px;
+	text-align: center;
+}
+
+.table-basket-price {
+	width: 70px;
+ }
+
+ .modal-basket tr:last-of-type {
+ 	height: 50px;
+ }
+
+ .modal-basket a {
+ 	display: block;
+ 	margin-left: auto;
+ 	padding-top: 10px;
+ 	width: 170px;
+ 	height: 44px;
+ 	border-radius: 15px;
+ }
+
+ .full-button:hover ~ .modal-basket,
+ .full-button:focus ~ .modal-basket {
+ 	display: block;
+ }
 
 .search-form,
 .login-form,
@@ -1375,42 +1519,6 @@ img.icecream-item {
 	background-image: url("../img/logo-htmlacademy-small.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.modal-feedback p {
-	color: #323232;
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 500;
-}
-
-.modal-feedback button, .modal-basket .button {
-	color: #fefefe;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 700;
-}
-
-.modal-basket {
-	color: #323232;
-	font-size: 13px;
-	line-height: 16px;
-	font-weight: 400;
-}
-.basket-price {
-	color: #999999;
-}
-
-.total-price span {
-	color: #323232;
-	font-size: 15px;
-	line-height: 18px;
-	font-weight: 700;
-}
-
-.full-basket button {
-	color: #323232;
-	background-color: #f7f6f3;
 }
 
 .breadcrumbs,
