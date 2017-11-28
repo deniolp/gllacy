@@ -1309,7 +1309,7 @@ img.icecream-item {
 }
 
 .subscribe-container .button,
-.map button {
+.map a {
 	color: #fefefe;
 	font-size: 18px;
 	line-height: 24px;
@@ -1385,12 +1385,12 @@ img.icecream-item {
 	line-height: 22px;
 }
 
-.map button {
+.map a {
 	width: 251px;
 	height: 43px;
 	margin-top: 26px;
-	padding: 0;
-	padding-left: 8px;
+	padding-top: 9px;
+	text-align: center;
 	border-radius: 20px;
 }
 
