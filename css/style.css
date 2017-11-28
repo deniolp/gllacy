@@ -929,6 +929,7 @@ button.filter-button:active {
 .bonuses {
 	display: flex;
 	justify-content: space-between;
+	align-items: stretch;
 	margin: 0;
 	padding: 0;
 	margin-top: 548px;
@@ -1092,7 +1093,7 @@ img.icecream-item {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	width: 293px;
-	height: 405px;
+	min-height: 405px;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
 	transition-duration: 0.3s;
 	opacity: 0;
@@ -1130,7 +1131,7 @@ img.icecream-item {
 	border-radius: 15px;
 	margin-top: 20px;
 	margin-bottom: 40px;
-	padding: 25px 20px 10px;
+	padding: 25px 20px;
 }
 
 .features h2 {
@@ -1143,6 +1144,7 @@ img.icecream-item {
 .features-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1150,68 +1152,70 @@ img.icecream-item {
 }
 
 .feature-item {
-	width: 540px;
-}
-
-.features-list p {
+	width: 484px;
 	position: relative;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	margin-left: 56px;
-	padding-top: 4px;
+	margin-top: 20px;
 }
 
-.features-list li:first-child p:first-of-type::before {
+.features-list p {
+	margin: 0;
+	padding: 0;
+}
+
+.features-list li:first-child::before {
 	content: "";
 	position: absolute;
 	width: 49px;
 	height: 49px;
 	left: -56px;
-	top: -9px;
+	top: -14px;
 	background-image: url("../img/icecream-little.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.features-list li:first-child p:last-of-type::before {
+.features-list li:nth-child(2)::before {
 	content: "";
 	position: absolute;
 	width: 49px;
 	height: 49px;
-	left: -56px;
-	top: -7px;
-	background-image: url("../img/leaf.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.features-list li:last-child p:first-of-type::before {
-	content: "";
-	position: absolute;
-	width: 49px;
-	height: 49px;
-	left: -56px;
-	top: -9px;
+	left: -59px;
+	top: -14px;
 	background-image: url("../img/cow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.features-list li:last-child p:last-of-type::before {
+.features-list li:nth-child(3)::before {
 	content: "";
 	position: absolute;
 	width: 49px;
 	height: 49px;
 	left: -56px;
-	top: -7px;
+	top: -11px;
+	background-image: url("../img/leaf.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-list li:last-child::before {
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -59px;
+	top: -11px;
 	background-image: url("../img/termometer.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.features-list li:last-child p {
-	margin-left: 52px;
+.features-list li:last-child {
+	padding-right: 2px;
 }
 
 .news-subscribe-wrapper {
