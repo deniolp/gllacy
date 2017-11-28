@@ -475,6 +475,7 @@ a.page-current {
 }
 
 .remove-item button {
+	font-size: 0;
 	width: 15px;
 	height: 15px;
 	border: none;
@@ -1039,22 +1040,26 @@ img.icecream-item {
 	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.ruble {
-	display: inline-block;
-	vertical-align: baseline;
+.kg {
+	position: relative;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #ffffff;
+	padding-left: 35px;
+}
+
+.kg::before {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: -2px;
 	width: 31px;
 	height: 31px;
 	margin-left: 3px;
 	background-image: url("../img/ruble-logo.png");
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.kg {
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 45px;
-	color: #ffffff;
 }
 
 .hit-background {
