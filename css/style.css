@@ -113,7 +113,7 @@ img {
 	position: relative;
 }
 
-.site-nav li:first-child:hover .sub-menu {
+.main-menu:hover .sub-menu {
 	display: block;
 }
 
@@ -193,7 +193,7 @@ img {
 .sub-menu-1::after {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 35px;
   left: 6px;
 
   width: 128px;
@@ -929,7 +929,6 @@ button.filter-button:active {
 .bonuses {
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
 	margin: 0;
 	padding: 0;
 	margin-top: 548px;
@@ -975,7 +974,7 @@ button.filter-button:active {
 	margin-left: auto;
 }
 
-.bonuses .bonuses-item:last-child a {
+.bonuses-item-2 a {
 	width: 189px;
 	height: 45px;
 	margin-left: auto;
@@ -986,7 +985,7 @@ button.filter-button:active {
 	background-position: center;
 }
 
-.bonuses-item:last-child {
+.bonuses-item-2 {
 	background-image: url("../img/chocolate-background.jpg");
 	background-position: center;
 }
@@ -1089,6 +1088,7 @@ img.icecream-item {
 .catalog-item-over {
 	position: absolute;
 	top: -6px;
+	bottom: -70px;
 	left: -13px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
@@ -1226,7 +1226,7 @@ img.icecream-item {
 
 .news {
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	border-radius: 15px;
 	background-color: #ffffff;
 	background-image: url("../img/strawberry-background.png");
@@ -1302,12 +1302,12 @@ img.icecream-item {
 	margin-top: 36px;
 }
 
-.subscribe-form p:first-child input {
+.subscribe-input {
 	width: 368px;
 	height: 44px;
 }
 
-.subscribe-form p:last-child input {
+.subscribe-submit {
 	width: 128px;
 	height: 43px;
 	border-radius: 20px;
@@ -1459,13 +1459,13 @@ img.icecream-item {
 	opacity: 0.8;
 }
 
-.footer-social li a:hover,
-.footer-social li a:focus {
+.footer-social a:hover,
+.footer-social a:focus {
 	opacity: 1;
 	border-color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-social li a:active {
+.footer-social a:active {
 	opacity: 0.9;
 	border-color: rgba(255, 255, 255, 0.7);
 }
@@ -1619,7 +1619,7 @@ fieldset {
 	padding: 0;
 }
 
-.filter fieldset:first-child label {
+.filter-sorting label {
 	padding-left: 11px;
 }
 
@@ -1643,7 +1643,8 @@ legend {
 	margin-bottom: 40px;
 }
 
-.catalog-filter label, .catalog-filter legend {
+.catalog-filter label,
+.catalog-filter legend {
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 16px;
@@ -1684,7 +1685,7 @@ legend {
 	margin-right: 20px;
 }
 
-.fat-filter li label::before {
+.fat-filter label::before {
 	content: "";
 	position: absolute;
 	left: -30px;
@@ -1714,6 +1715,10 @@ legend {
 .staff-filter li {
 	position: relative;
 	padding-top: 8px;
+}
+
+.staff-filter label {
+	padding-left: 11px;
 }
 
 .staff-filter li:first-child {
