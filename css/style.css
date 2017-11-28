@@ -344,10 +344,19 @@ a.page-current {
 	width: 120px;
 }
 
+.feedback-wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 .modal-feedback {
-	position: absolute;
-	top: 576px;
-	left: 623px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 	margin-top: -238px;
 	margin-left: -221px;
 	width: 477px;
