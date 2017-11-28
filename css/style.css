@@ -240,7 +240,7 @@ a.page-current {
 	position: relative;
 }
 
-.user-buttons button {
+.user-buttons a {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
@@ -248,7 +248,7 @@ a.page-current {
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-.search-button {
+a.search-button {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
@@ -662,18 +662,19 @@ button.filter-button:active {
 }
 
 .header-button {
+	display: inline-block;
 	height: 32px;
 	border-radius: 15px;
-	border: none;
 	text-align: center;
 	margin-left: 11px;
+	padding-top: 7px;
 }
 
 .login-button {
 	position: relative;
 	width: 92px;
 	height: 32px;
-	padding-left: 34px;
+	padding-left: 27px;
 }
 
 .login-button::before {
@@ -697,7 +698,7 @@ button.filter-button:active {
 	position: relative;
 	width: 117px;
 	height: 32px;
-	padding-right: 1px;
+	padding-left: 6px;
 }
 
 .basket-button::before {
