@@ -113,7 +113,7 @@ img {
 	position: relative;
 }
 
-.main-menu:hover .sub-menu {
+.main-menu:hover .sub-menu-wrapper {
 	display: block;
 }
 
@@ -151,10 +151,15 @@ img {
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
-.sub-menu {
+.sub-menu-wrapper {
 	position: absolute;
-	top: 37px;
+	top: 30px;
 	left: -7px;
+	padding-top: 7px;
+	z-index: 10;
+}
+
+.sub-menu {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
@@ -548,7 +553,7 @@ a.search-button {
 .search-form,
 .login-form,
 .feedback-wrapper,
-/*.sub-menu,*/
+.sub-menu-wrapper,
 .modal-basket {
 	display: none;
 }
