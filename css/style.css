@@ -161,39 +161,43 @@ img {
 	background-color: #f8f7f4;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 7px;
 	border-radius: 5px;
 	z-index: 10;
 }
 
 .sub-menu a {
 	width: 100%;
+	height: 30px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
 	color: #323232;
 	text-decoration: none;
 	margin: 0;
-	padding-top: 11px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 9px;
+	padding-top: 8px;
 	border-radius: 0;
 }
 
 .sub-menu-1 a {
+	height: 39px;
 	font-weight: 700;
 	text-decoration: none;
+	border-radius: 5px 5px 0 0;
+	padding-top: 11px;
 }
 
-.sub-menu li:nth-of-type(2) {
-  margin-top: 4px;
+.sub-menu li:last-of-type > a {
+	height: 39px;
+	border-radius:  0 0 5px 5px;
+	padding-top: 11px;
 }
 
 .sub-menu-1::after {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 38px;
   left: 6px;
 
   width: 128px;
@@ -212,10 +216,6 @@ img {
 .sub-menu a:focus {
 	background-color: #fbded7;
 	color: #323232;
-}
-
-.sub-menu li:first-child a {
-	border-radius: 5px 5px 0 0;
 }
 
 a.sub-menu-current,
@@ -547,7 +547,7 @@ a.search-button {
 .search-form,
 .login-form,
 .feedback-wrapper,
-.sub-menu,
+/*.sub-menu,*/
 .modal-basket {
 	display: none;
 }
@@ -663,6 +663,7 @@ button.filter-button:active {
 
 .header-button {
 	display: inline-block;
+	vertical-align: middle;
 	height: 32px;
 	border-radius: 15px;
 	text-align: center;
@@ -1271,6 +1272,7 @@ img.icecream-item {
 	min-height: 220px;
 	border-radius: 10px;
 	padding-top: 5px;
+	padding-bottom: 5px;
 	background-image: url("../img/postal-background.svg");
 }
 
