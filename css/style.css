@@ -147,6 +147,7 @@ img {
 .main-nav a {
 	color: #ffffff;
 	text-decoration: underline;
+	-webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1044,6 +1045,7 @@ img.icecream-item {
 
 .kg {
 	position: relative;
+	white-space: nowrap;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 45px;
@@ -1585,6 +1587,7 @@ fieldset ul {
 
 .breadcrumbs a {
 	text-decoration: underline;
+	-webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
