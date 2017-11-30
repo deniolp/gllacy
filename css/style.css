@@ -309,20 +309,29 @@ a.search-button {
 	display: block;
 }
 
-.login-button:hover ~ .login-form,
-.login-button:focus ~ .login-form {
+.login-wrapper:hover .login-form,
+.login-wrapper:focus .login-form {
 	display: block;
 }
 
-.login-form {
+.login-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+.login-form-wrapper {
 	position: absolute;
 	left: -130px;
-	top: 37px;
+	top: 30px;
+	padding-top: 7px;
+	z-index: 10px;
+}
+
+.login-form {
 	width: 277px;
 	height :214px;
 	padding: 20px;
 	border-radius: 6px;
-	z-index: 10;
 }
 
 .login-form input {
