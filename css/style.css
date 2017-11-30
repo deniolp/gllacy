@@ -437,10 +437,19 @@ a.search-button {
 	background-color: #353535;
 }
 
-.modal-basket {
+.full-basket {
+	position: relative;
+	z-index: 10;
+}
+
+.full-basket-wrapper {
 	position: absolute;
-	top: 37px;
+	top: 30px;
 	right: 0;
+	padding-top: 7px;
+}
+
+.modal-basket {
 	width: 540px;
 	border-radius: 6px;
 	padding: 18px 15px 20px;
@@ -559,8 +568,8 @@ a.search-button {
  	border-radius: 15px;
  }
 
- .full-button:hover ~ .modal-basket,
- .full-button:focus ~ .modal-basket {
+ .full-basket:hover .modal-basket,
+ .full-basket:focus .modal-basket {
  	display: block;
  }
 
