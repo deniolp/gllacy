@@ -32,15 +32,17 @@
         </nav>
         <section class="user-buttons">
           <h2 class="visually-hidden">Блок пользовательских кнопок в шапке</h2>
-          <div>
+          <div class="search-wrapper">
             <a class="header-button search-button" href="#"><span class="visually-hidden">Кнопка для вызова формы поиска</span></a>
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
-              <p>
-                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-                <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
-              </p>
-            </form>
+            <div class="search-form-wrapper">
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <form class="search-form modal modal-search" action="https://echo.htmlacademy.ru" method="get">
+                <p>
+                  <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                  <label for="search-field" class="visually-hidden">Поле для ввода текста поиска</label>
+                </p>
+              </form>
+            </div>
           </div>
           <div>
             <a class="header-button login-button" href="#"><span class="visually-hidden">Кнопка для вызова формы входа в личный кабинет</span>Вход</a>
