@@ -1,4 +1,5 @@
 
+// Переменные для попапа формы
 
 var link = document.querySelector(".feedback-button");
 var popup = document.querySelector(".feedback-wrapper");
@@ -10,6 +11,8 @@ var feedbackField = popup.querySelector("[name=feedback-field]");
 var storageName = localStorage.getItem("name");
 var storageEmail = localStorage.getItem("email");
 
+// Переменные для оживления слайдов
+
 var slide1 = document.querySelector(".slide-btn-1");
 var slide2 = document.querySelector(".slide-btn-2");
 var slide3 = document.querySelector(".slide-btn-3");
@@ -17,6 +20,8 @@ var slideDescription1 = document.querySelector(".slide1");
 var slideDescription2 = document.querySelector(".slide2");
 var slideDescription3 = document.querySelector(".slide3");
 var body = document.querySelector("body");
+
+// Скрипт для попапа формы
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -61,6 +66,8 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+
+// Скрипт для оживления слайдов
 
 slide1.addEventListener("click", function(evt) {
 	evt.preventDefault();
