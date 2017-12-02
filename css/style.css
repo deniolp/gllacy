@@ -210,7 +210,7 @@ img {
 	padding-top: 11px;
 }
 
-.sub-menu li:last-of-type > a {
+a.sub-menu-last {
 	height: 39px;
 	border-radius:  0 0 5px 5px;
 	padding-top: 11px;
@@ -734,8 +734,8 @@ a.search-button {
 	color: #999999;
 	line-height: 24px;
 	font-weight: 400;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 13px;
 	padding-right: 15px;
 	border: 1px solid #d3d3d2;
