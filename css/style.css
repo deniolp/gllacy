@@ -1415,14 +1415,16 @@ img.icecream-item {
 .map-background {
 	position: relative;
 	margin: 0 auto;
-	/*padding-top: 62px;
-	padding-left: 871px;*/
 	width: 1200px;
 	height: 430px;
 	background-color: #f7f1d9;
 	background-image: url("../img/map-pin.png");
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.map-background iframe {
+	border: none;
 }
 
 .map-info {
