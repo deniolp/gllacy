@@ -1,3 +1,6 @@
+/*В safari & IE ошибка js на локалной версии, нужно проверять
+в собранной (не локальной версии).*/
+
 html {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -25,14 +28,14 @@ body {
 	background-color: #849d8f;
 	background-image: url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-position: 116px top;
+	background-position: center top;
 }
 
 .body-2 {
 	background-color: #8996a6;
 	background-image: url("../img/slide-2.png");
 	background-repeat: no-repeat;
-	background-position: 96px top;
+	background-position: center top;
 }
 
 .body-3 {
