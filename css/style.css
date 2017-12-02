@@ -750,8 +750,8 @@ a.search-button {
     border-width: 2px;
     border-color: rgb(154, 154, 154);
 	padding-left: 12px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
 
 .user-buttons input:focus,
@@ -763,8 +763,8 @@ a.search-button {
   	border-color: rgb(46, 136, 228);
   	color: #323232;
 	padding-left: 12px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
 
 
