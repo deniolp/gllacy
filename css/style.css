@@ -1977,7 +1977,8 @@ legend {
 }
 
 .filter-input-checkbox:checked + label:hover::after,
-.filter-input-checkbox:checked + label:focus::after {
+.filter-input-checkbox:checked + label:focus::after,
+.filter-input-checkbox:checked:focus + label::after {
 	background-image: url("../img/checkbox-on-h.svg");
 }
 
@@ -1986,6 +1987,8 @@ legend {
 .filter-input-checkbox:disabled + label:active::after {
 	background-image: url("../img/checkbox-on-d.svg");
 }
+
+
 
 .filter-price-background {
 	position: relative;
@@ -2107,7 +2110,9 @@ button.filter-button:focus {
 .filter-option label:hover::before,
 .filter-option label:focus::before,
 .filter-option label:hover::after,
-.filter-option label:focus::after {
+.filter-option label:focus::after,
+.filter-option input:focus + label::before,
+.filter-option input:focus + label::after {
 	border-color: #ffffff;
 }
 
