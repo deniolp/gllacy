@@ -1507,19 +1507,15 @@ img.icecream-item {
 }
 
 .map {
-	width: 100vw;
-  	position: relative;
-  	left: 50%;
-  	right: 50%;
-  	margin-left: -50vw;
-  	margin-right: -50vw;
-  	margin-bottom: 4px;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto 4px auto;
 }
 
 .map-background {
 	position: relative;
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
 	height: 430px;
 	background-color: #f7f1d9;
 	background-image: url("../img/map-pin.png");
@@ -1528,6 +1524,7 @@ img.icecream-item {
 }
 
 .map-background iframe {
+	width: 100%;
 	border: none;
 }
 
