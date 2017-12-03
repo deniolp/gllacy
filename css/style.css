@@ -2096,6 +2096,10 @@ button.filter-button:focus {
 	background-repeat: no-repeat;
 }
 
+.catalog-filter select::-ms-expand {
+	display: none;
+}
+
 .catalog-filter select:hover,
 .catalog-filter select:focus {
 	color: #323232;
