@@ -899,11 +899,13 @@ button.filter-button:active {
 	background-image: url("../img/basket-b.svg");
 }
 
-.full-button {
+a.full-button {
 	position: relative;
 	width: 117px;
 	height: 32px;
 	padding-left: 26px;
+	color: #323232;
+	background-color: #f7f6f3;
 }
 
 .full-button::before {
@@ -1001,24 +1003,6 @@ button.filter-button:active {
 	padding-right: 6px;
 }
 
-/*.slide1 {
-	position: absolute;
-	top: -359px;
-	left: 51px;
-}
-
-.slide2 {
-	position: absolute;
-	top: -359px;
-	left: 31px;
-}
-
-.slide3 {
-	position: absolute;
-	top: -359px;
-	left: 33px;
-}*/
-
 .slides h3 {
 	font-size: 60px;
 	line-height: 1;
@@ -1027,30 +1011,6 @@ button.filter-button:active {
 	text-align: center;
 }
 
-/*.slide3 .slide-description {
-	width: 632px;
-	height: 127px;
-	margin-top: -527px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.slide2 .slide-description {
-	width: 644px;
-	height: 127px;
-	margin-top: -532px;
-	margin-left: 217px;
-	margin-right: auto;
-}
-
-.slide1 .slide-description {
-	width: 670px;
-	height: 127px;
-	margin-top: -554px;
-	margin-left: auto;
-	margin-right: auto;
-}
-*/
 .slides a {
 	font-size: 32px;
 	line-height: 44px;
@@ -2249,84 +2209,3 @@ button.filter-button:focus {
 .catalog-footer {
 	margin-top: 5px;
 }
-
-/*
-
-.mom-of-slides {
-	height: 881px;
-	margin-left: 80px;
-	position: relative;
-	width: 1079px;
-}
-
-.slider {
-	height: inherit;
-	overflow: hidden;
-	position: relative;
-	width: inherit;
-}
-
-.slides {
-	height: inherit;
-	position: absolute;
-	width: inherit;
-	opacity: 0;
-	z-index: 0;
-}
-
-input:nth-of-type(1):checked ~ .slider > .slide1,
-input:nth-of-type(2):checked ~ .slider > .slide2,
-input:nth-of-type(3):checked ~ .slider > .slide3 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.mom-of-slides .controls {
-	top: 563px;
-	left: -53px;
-	position: absolute;
-}
-
-.mom-of-slides label {
-	cursor: pointer;
-	display: inline-block;
-	width: 21px;
-	height: 21px;
-	margin-right: 5px;
-	background-image: url("../img/radio-off.svg");
-	position: relative;
-	z-index: 100;
-}
-
-.mom-of-slides label:hover,
-input:nth-of-type(1):checked ~ .controls label:nth-of-type(1),
-input:nth-of-type(2):checked ~ .controls label:nth-of-type(2),
-input:nth-of-type(3):checked ~ .controls label:nth-of-type(3) {
-	background-image: url("../img/radio-on.svg");
-}
-
-.slide-description {
-	position: absolute;
-	height: 120px;
-	text-align: center;
-	top: 398px;
-	z-index: 0;
-	padding-left: 190px;
-}
-
-.slide-description h3 {
-	font-size: 60px;
-	color: white;
-	width: 670px;
-	line-height: 1;
-}
-
-.slide3 h3 {
-	width: 640px;
-}
-
-*/
-
-
-
-
