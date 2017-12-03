@@ -1628,7 +1628,8 @@ img.icecream-item {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	min-height: 100px;
+	/*Без указания высоты в IE весь блок съезжает*/
+	height: 100px;
 }
 
 .main-footer ul {
