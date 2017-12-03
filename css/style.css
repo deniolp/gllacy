@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	min-width: 1200px;
+	min-width: 1148px;
 	margin: 0;
 	padding: 0;
 
@@ -1561,8 +1561,10 @@ img.icecream-item {
 	font-weight: 700;
 }
 
-.map-phone {
+.map .map-phone {
+	font-size: 18px;
 	line-height: 22px;
+	font-weight: 700;
 }
 
 .map-schedule {
@@ -1690,6 +1692,10 @@ img.icecream-item {
 	margin-right: 42px;
 }
 
+.footer-copyright {
+	position: relative;
+}
+
 .footer-features a,
 .footer-copyright a {
 	color: #ffffff;
@@ -1727,8 +1733,7 @@ img.icecream-item {
 	padding-top: 30px;
 }
 
-.footer-copyright p::before {
-	content: "";
+.footer-logo {
 	position: absolute;
 	top: -14px;
 	left: 0px;
@@ -1737,6 +1742,7 @@ img.icecream-item {
 	background-image: url("../img/logo-htmlacademy-small.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	z-index: 20;
 }
 
 .breadcrumbs,
