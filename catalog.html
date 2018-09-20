@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="catalog-page-background">
-    
+
     <header class="page-header container">
       <div class="header-wrapper">
         <p class="logo-image">
@@ -137,6 +137,8 @@
                 </div>
                 <div class="range-line-selected">
                 </div>
+                <input type="number" name="range-left" value="" class="visually-hidden range-left">
+                <input type="number" name="range-right" value="" class="visually-hidden range-right">
                 <div class="runner-left" tabindex="0">
                   <span class="visually-hidden">Сортировка по цене: нижний диапазон</span>
                 </div>
@@ -337,7 +339,7 @@
         </section>
         <section class="catalog-pagination">
           <h2 class="visually-hidden">Пагинация страниц в каталоге</h2>
-          
+
           <ul class="pagination-list">
             <li><button class="pagination-button pagination-button-back" type="button"><span class="visually-hidden">Назад</span></button></li>
             <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -369,5 +371,6 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
+    <script type="text/javascript" src="js/range.js"></script>
   </body>
 </html>
