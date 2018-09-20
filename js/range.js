@@ -3,6 +3,9 @@
 var RANGE_WIDTH = 176;
 var RANGE_LEFT_BORDER = 22;
 var PIN_WIDTH = 20;
+var MIN_RANGE = 100;
+var MAX_RANGE = 500;
+var RANGE_STEP = 2.6;
 
 var rangeLeftInput = document.querySelector('.range-left');
 var rangeRightInput = document.querySelector('.range-right');
@@ -25,12 +28,15 @@ rangeLeft.addEventListener('mousedown', function(evt) {
     if (rangeLeft.offsetLeft - shiftX < RANGE_LEFT_BORDER) {
       rangeLeft.style.left = RANGE_LEFT_BORDER + 'px';
       rangeLine.style.left = RANGE_LEFT_BORDER + 'px';
+      rangeLeftInput.value = MIN_RANGE;
     } else if (rangeLeft.offsetLeft - shiftX > RANGE_WIDTH) {
       rangeLeft.style.left = RANGE_WIDTH + 'px';
       rangeLine.style.left = RANGE_WIDTH + 'px';
+      rangeLeftInput.value = MAX_RANGE;
     } else {
       rangeLeft.style.left = (rangeLeft.offsetLeft - shiftX) + 'px';
       rangeLine.style.left = (rangeLeft.offsetLeft - shiftX) + 'px';
+      rangeLeftInput.value = MIN_RANGE + Math.round(((rangeLeft.offsetLeft - shiftX - RANGE_LEFT_BORDER) * RANGE_STEP));
     }
 
     if (rangeLeft.offsetLeft - shiftX + PIN_WIDTH >= rangeRight.offsetLeft - shiftX) {
@@ -64,12 +70,15 @@ rangeRight.addEventListener('mousedown', function(evt) {
     if (rangeRight.offsetLeft - shiftX < RANGE_LEFT_BORDER) {
       rangeRight.style.left = RANGE_LEFT_BORDER + 'px';
       rangeLine.style.right = RANGE_WIDTH + 'px';
+      rangeRightInput.value = MIN_RANGE;
     } else if (rangeRight.offsetLeft - shiftX > RANGE_WIDTH) {
       rangeRight.style.left = RANGE_WIDTH + 'px';
       rangeLine.style.right = RANGE_LEFT_BORDER + 'px';
+      rangeRightInput.value = MAX_RANGE;
     } else {
       rangeRight.style.left = (rangeRight.offsetLeft - shiftX) + 'px';
       rangeLine.style.right = (RANGE_WIDTH - (rangeRight.offsetLeft - shiftX) + RANGE_LEFT_BORDER) + 'px';
+      rangeRightInput.value = MAX_RANGE - Math.round(((RANGE_WIDTH - rangeRight.offsetLeft - shiftX) * RANGE_STEP));
     }
 
     if (rangeRight.offsetLeft - shiftX - PIN_WIDTH <= rangeLeft.offsetLeft - shiftX) {
