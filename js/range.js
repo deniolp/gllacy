@@ -8,6 +8,7 @@ var rangeLeftInput = document.querySelector('.range-left');
 var rangeRightInput = document.querySelector('.range-right');
 var rangeLeft = document.querySelector('.runner-left');
 var rangeRight = document.querySelector('.runner-right');
+var rangeLine = document.querySelector('.range-line-selected');
 
 rangeLeft.addEventListener('mousedown', function(evt) {
   evt.preventDefault();
@@ -23,10 +24,13 @@ rangeLeft.addEventListener('mousedown', function(evt) {
 
     if (rangeLeft.offsetLeft - shiftX < RANGE_LEFT_BORDER) {
       rangeLeft.style.left = RANGE_LEFT_BORDER + 'px';
+      rangeLine.style.left = RANGE_LEFT_BORDER + 'px';
     } else if (rangeLeft.offsetLeft - shiftX > RANGE_WIDTH) {
       rangeLeft.style.left = RANGE_WIDTH + 'px';
+      rangeLine.style.left = RANGE_WIDTH + 'px';
     } else {
       rangeLeft.style.left = (rangeLeft.offsetLeft - shiftX) + 'px';
+      rangeLine.style.left = (rangeLeft.offsetLeft - shiftX) + 'px';
     }
 
     if (rangeLeft.offsetLeft - shiftX + PIN_WIDTH >= rangeRight.offsetLeft - shiftX) {
@@ -59,10 +63,13 @@ rangeRight.addEventListener('mousedown', function(evt) {
 
     if (rangeRight.offsetLeft - shiftX < RANGE_LEFT_BORDER) {
       rangeRight.style.left = RANGE_LEFT_BORDER + 'px';
+      rangeLine.style.right = RANGE_WIDTH + 'px';
     } else if (rangeRight.offsetLeft - shiftX > RANGE_WIDTH) {
       rangeRight.style.left = RANGE_WIDTH + 'px';
+      rangeLine.style.right = RANGE_LEFT_BORDER + 'px';
     } else {
       rangeRight.style.left = (rangeRight.offsetLeft - shiftX) + 'px';
+      rangeLine.style.right = (RANGE_WIDTH - (rangeRight.offsetLeft - shiftX) + RANGE_LEFT_BORDER) + 'px';
     }
 
     if (rangeRight.offsetLeft - shiftX - PIN_WIDTH <= rangeLeft.offsetLeft - shiftX) {
