@@ -24,7 +24,7 @@
         rangeLeftInput.value = MAX_RANGE;
       } else {
         rangeLine.style.left = position + 'px';
-        rangeLeftInput.value = MIN_RANGE + Math.round(((position - RANGE_LEFT_BORDER) * RANGE_STEP));
+        rangeLeftInput.value = MIN_RANGE + Math.round((position - RANGE_LEFT_BORDER) * RANGE_STEP);
       }
     } else {
       if (position < RANGE_LEFT_BORDER) {
@@ -35,7 +35,7 @@
         rangeRightInput.value = MAX_RANGE;
       } else {
         rangeLine.style.right = (RANGE_WIDTH - position + RANGE_LEFT_BORDER) + 'px';
-        rangeRightInput.value = MAX_RANGE - Math.round(((RANGE_WIDTH - position) * RANGE_STEP));
+        rangeRightInput.value = MAX_RANGE - Math.round((RANGE_WIDTH - position) * RANGE_STEP);
       }
     }
   };
