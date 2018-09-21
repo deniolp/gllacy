@@ -71,8 +71,47 @@
     };
   };
 
+  var touchStartHandler = function(element, boolean, callback) {
+    return function(startTouchEvt) {
+      startTouchEvt.preventDefault();
+
+      var startCoordX = startTouchEvt.changedTouches[0].screenX;
+
+      var touchMoveHandler = function(moveTouchEvt) {
+        var shiftX = startCoordX - moveTouchEvt.changedTouches[0].screenX;
+
+        startCoordX = moveTouchEvt.changedTouches[0].screenX;
+
+        var leftPosition = element.offsetLeft - shiftX;
+
+        if (leftPosition < RANGE_LEFT_BORDER) {
+          element.style.left = RANGE_LEFT_BORDER + 'px';
+        } else if (leftPosition > RANGE_WIDTH) {
+          element.style.left = RANGE_WIDTH + 'px';
+        } else {
+          element.style.left = leftPosition + 'px';
+        }
+
+        callback(boolean, leftPosition);
+      };
+
+      var touchEndHandler = function(endTouchEvt) {
+        endTouchEvt.preventDefault();
+
+        document.removeEventListener('touchmove', touchMoveHandler);
+        document.removeEventListener('touchend', touchEndHandler);
+      };
+
+      document.addEventListener('touchmove', touchMoveHandler);
+      document.addEventListener('touchend', touchEndHandler);
+    };
+  };
+
   rangeLeft.addEventListener('mousedown', mouseDownHandler(rangeLeft, true, window.ranges.applyRange));
   rangeRight.addEventListener('mousedown', mouseDownHandler(rangeRight, false, window.ranges.applyRange));
+
+  rangeLeft.addEventListener('touchstart', touchStartHandler(rangeLeft, true, window.ranges.applyRange));
+  rangeRight.addEventListener('touchstart', touchStartHandler(rangeRight, false, window.ranges.applyRange));
 
   rangeLeft.addEventListener('focus', function () {
     rangeLeft.addEventListener('keydown', keyDownHandler(rangeLeft, true, window.ranges.applyRange));
