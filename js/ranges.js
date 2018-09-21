@@ -13,6 +13,8 @@
   var rangeLine = document.querySelector('.range-line-selected');
   var rangeLeftInput = document.querySelector('.range-left');
   var rangeRightInput = document.querySelector('.range-right');
+  var leftPrice = document.querySelector('.left-price');
+  var rightPrice = document.querySelector('.right-price');
 
   window.ranges = {
     applyRange: function(boolean, position) {
@@ -28,6 +30,8 @@
           rangeLeftInput.value = MIN_RANGE + Math.round((position - RANGE_LEFT_BORDER) * RANGE_STEP);
         }
 
+        leftPrice.innerText = rangeLeftInput.value;
+
         if (position + PIN_WIDTH >= rangeRight.offsetLeft) {
           rangeLeft.style.left = rangeRight.offsetLeft - PIN_WIDTH + 'px';
         }
@@ -42,6 +46,8 @@
           rangeLine.style.right = (RANGE_WIDTH - position + RANGE_LEFT_BORDER) + 'px';
           rangeRightInput.value = MAX_RANGE - Math.round((RANGE_WIDTH - position) * RANGE_STEP);
         }
+
+        rightPrice.innerText = rangeRightInput.value;
 
         if (position - PIN_WIDTH <= rangeLeft.offsetLeft) {
           rangeRight.style.left = rangeLeft.offsetLeft + PIN_WIDTH + 'px';
