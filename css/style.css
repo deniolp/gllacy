@@ -736,7 +736,7 @@ a.search-button {
 .modal-feedback input,
 .modal-feedback textarea {
 	font-size: 16px;
-	
+
 }
 
 .user-buttons input,
@@ -991,7 +991,7 @@ a.full-button {
 	display: block;
 }
 
-.slide1 .slide-description {
+.slide-description1 {
 	width: 683px;
 	height: 127px;
 	margin-right: auto;
@@ -999,7 +999,7 @@ a.full-button {
 	padding-right: 4px;
 }
 
-.slide2 .slide-description {
+.slide-description2 {
 	width: 657px;
 	height: 127px;
 	margin-right: auto;
@@ -1007,7 +1007,7 @@ a.full-button {
 	padding-right: 4px;
 }
 
-.slide3 .slide-description {
+.slide-description3 {
 	width: 656px;
 	height: 127px;
 	margin-right: auto;
@@ -2228,7 +2228,7 @@ button.filter-button:focus {
 	padding: 0;
 	color: rgba(255, 255, 255, 0.3);
 }
-	
+
 .catalog-footer {
 	margin-top: 5px;
 }
