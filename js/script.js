@@ -14,12 +14,9 @@ var storageEmail = localStorage.getItem("email");
 
 // Переменные для оживления слайдов
 
-var slide1 = document.querySelector(".slide-btn-1");
-var slide2 = document.querySelector(".slide-btn-2");
-var slide3 = document.querySelector(".slide-btn-3");
-var slideDescription1 = document.querySelector(".slide1");
-var slideDescription2 = document.querySelector(".slide2");
-var slideDescription3 = document.querySelector(".slide3");
+var slides = document.querySelectorAll(".slide-btn");
+var slideDescriptions = document.querySelectorAll(".slides");
+var slideButtons = document.querySelectorAll(".slide-btn");
 var body = document.querySelector("body");
 
 // Скрипт для попапа формы
@@ -70,68 +67,19 @@ window.addEventListener("keydown", function (evt) {
 
 // Скрипт для оживления слайдов
 
-slide1.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	if (body.classList.contains("body-2")) {
-		body.classList.remove("body-2");
-	} else if (body.classList.contains("body-3")) {
-		body.classList.remove("body-3");
-	};
-	body.classList.add("body-1");
-	if (slideDescription2.classList.contains("slide-active")) {
-		slideDescription2.classList.remove("slide-active");
-	} else if (slideDescription3.classList.contains("slide-active")) {
-		slideDescription3.classList.remove("slide-active");
-	};
-	slideDescription1.classList.add("slide-active");
-	if (slide2.classList.contains("slide-btn-active")) {
-		slide2.classList.remove("slide-btn-active");
-	} else if (slide3.classList.contains("slide-btn-active")) {
-		slide3.classList.remove("slide-btn-active");
-	};
-	slide1.classList.add("slide-btn-active");
-	})
+slides.forEach(function(slide) {
+  slide.addEventListener("click", function(evt) {
+  	evt.preventDefault();
+    body.className = "body-" + evt.target.id;
 
-slide2.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	if (body.classList.contains("body-1")) {
-		body.classList.remove("body-1");
-	} else if (body.classList.contains("body-3")) {
-		body.classList.remove("body-3");
-	};
-	body.classList.add("body-2");
-	if (slideDescription1.classList.contains("slide-active")) {
-		slideDescription1.classList.remove("slide-active");
-	} else if (slideDescription3.classList.contains("slide-active")) {
-		slideDescription3.classList.remove("slide-active");
-	};
-	slideDescription2.classList.add("slide-active");
-	if (slide1.classList.contains("slide-btn-active")) {
-		slide1.classList.remove("slide-btn-active");
-	} else if (slide3.classList.contains("slide-btn-active")) {
-		slide3.classList.remove("slide-btn-active");
-	};
-	slide2.classList.add("slide-btn-active");
-	})
+    slideButtons.forEach(function(item) {
+      item.classList.remove("slide-btn-active");
+    })
+    evt.target.classList.add("slide-btn-active");
 
-slide3.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	if (body.classList.contains("body-1")) {
-		body.classList.remove("body-1");
-	} else if (body.classList.contains("body-2")) {
-		body.classList.remove("body-2");
-	};
-	body.classList.add("body-3");
-	if (slideDescription1.classList.contains("slide-active")) {
-		slideDescription1.classList.remove("slide-active");
-	} else if (slideDescription2.classList.contains("slide-active")) {
-		slideDescription2.classList.remove("slide-active");
-	};
-	slideDescription3.classList.add("slide-active");
-	if (slide1.classList.contains("slide-btn-active")) {
-		slide1.classList.remove("slide-btn-active");
-	} else if (slide2.classList.contains("slide-btn-active")) {
-		slide2.classList.remove("slide-btn-active");
-	};
-	slide3.classList.add("slide-btn-active");
-	})
+    slideDescriptions.forEach(function(item) {
+      item.classList.remove("slide-active");
+    })
+    slideDescriptions[evt.target.id - 1].classList.add("slide-active");
+  })
+})
