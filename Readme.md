@@ -11,7 +11,7 @@ _Some features that was learned during the working with this project:_
 * Accessibility
 * Working with PS and .psd
 * Some JS (slider, mouse-events, key-events and double range-input)
-*
+* Pixel Perfect approach
 
 #### _Screenshots_ =>
 
